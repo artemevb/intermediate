@@ -73,7 +73,7 @@ export default function LearningMarketing() {
           "
                 >
                     {/* Первая карточка */}
-                    <div className="bg-corporate rounded-[30px] mdx:rounded-[50px] flex flex-col justify-between gap-4 p-[30px] mdx:px-[40px] mdx:max-w-[705px] min-w-[300px] mdx:min-w-[536px] xl:pt-[100px] xl:min-w-[705px]">
+                    <div className="bg-corporate rounded-[30px] mdx:rounded-[50px] flex flex-col justify-between gap-4 p-[30px] mdx:px-[40px] mdx:max-w-[705px] min-w-[300px] mdx:min-w-[536px] xl:pt-[100px] xl:min-w-[660px]">
                         <h3 className="text-[25px] mdx:text-[30px] xl:text-[50px] font-bold xl:leading-[65px] mdx:uppercase">
                             Процесс работы максимально чистый и прозрачный
                         </h3>
@@ -92,53 +92,55 @@ export default function LearningMarketing() {
                     </div>
 
                     {/* Вторая карточка */}
-                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[434px] max-w-[474px]">
-                        <h3 className="text-[18px] mdx:text-[30px] xl:text-[50px] font-semibold text-[#010101] mdx:tracking-[-1px] xl:leading-[65px] mdx:uppercase">
+                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[434px] max-w-[474px] xl:min-w-[484px]">
+                        <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
                             Продающие сайты и платформы
                         </h3>
                         <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
                             Разрабатываем современные сайты и платформы, которые не только
                             привлекают клиентов, но и улучшают взаимодействие с вашим брендом.
-                            {"\n\n"}🔹Дизайн, который цепляет и вдохновляет
-                            {"\n\n"}🔹Функционал, адаптированный под задачи бизнеса
+                            {"\n"}🔹Дизайн, который цепляет и вдохновляет
+                            {"\n"}🔹Функционал, адаптированный под задачи бизнеса
                         </p>
-                        <button className="flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
+                        <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
                             Подробнее
-                            <span className="ml-2 hover:pl-3 transition-all duration-200">
+                            <span className="ml-2 transition-transform duration-200 group-hover:translate-x-2">
                                 <Image
                                     src={arrow_red}
                                     alt="arrow red"
-                                    width={100}
-                                    height={100}
+                                    width={25}
+                                    height={25}
                                     className="w-[25px] h-[25px]"
                                 />
                             </span>
                         </button>
+
                     </div>
 
                     {/* Третья карточка */}
-                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[400px] max-w-[474px]">
-                        <h3 className="text-[18px] mdx:text-[30px] xl:text-[50px] font-semibold text-[#010101] mdx:uppercase xl:leading-[65px]">
+                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[400px] max-w-[474px] xl:min-w-[484px]">
+                        <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
                             Настройка рекламы, которая работает
                         </h3>
                         <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
                             Настраиваем рекламу и таргетинг так, чтобы привлекать нужную
                             аудиторию с минимальными затратами и максимальной эффективностью.
-                            {"\n\n"}🔹Точный анализ и сегментация аудитории
-                            {"\n\n"}🔹Прозрачные отчёты и постоянная оптимизация
+                            {"\n"}🔹Точный анализ и сегментация аудитории
+                            {"\n"}🔹Прозрачные отчёты и постоянная оптимизация
                         </p>
-                        <button className="flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
+                        <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
                             Подробнее
-                            <span className="ml-2 hover:pl-3 transition-all duration-200">
+                            <span className="ml-2 transition-transform duration-200 group-hover:translate-x-2">
                                 <Image
                                     src={arrow_red}
                                     alt="arrow red"
-                                    width={100}
-                                    height={100}
+                                    width={25}
+                                    height={25}
                                     className="w-[25px] h-[25px]"
                                 />
                             </span>
                         </button>
+
                     </div>
                 </div>
             </div>

@@ -29,7 +29,8 @@ const config: Config = {
         hover_corporate: "#EE787C",
         background: "var(--background)",
         foreground: "var(--foreground)",
-        darkOverlay: "rgba(35, 35, 35, 1)", // Добавленный цвет
+        darkOverlay: "rgba(35, 35, 35, 1)",
+        form: "rgba(22, 22, 22, 0.50)",
       },
       backdropBlur: {
         "7.5": "7.5px",

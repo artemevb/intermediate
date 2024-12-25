@@ -3,6 +3,10 @@ import Card from "./Card";
 import ContentMarketing from "./ContentMarketing";
 import Services from "./Services";
 import LearningMarketing from "./LearningMarketing";
+import ReviewsClients from "./ReviewsClients";
+import PartnersSlider from "./PartnersSlider";
+
+import Form from "./Form";
 
 // type Locale = 'ru' | 'uz' | 'en';
 
@@ -10,7 +14,7 @@ import LearningMarketing from "./LearningMarketing";
 //   locale: string;
 // }
 export default function Main() {
-// export default function Main({ locale }: NewsCompProps) {
+  // export default function Main({ locale }: NewsCompProps) {
   return (
     <div className=" bg-[#303030] flex flex-col gap-[90px] mdl:gap-[130px] xl:gap-[180px]">
       <div>
@@ -19,6 +23,9 @@ export default function Main() {
       </div>
       <Services />
       <LearningMarketing />
+      <ReviewsClients />
+      <PartnersSlider />
+      <Form />
     </div>
   );
 }

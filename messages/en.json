@@ -66,6 +66,47 @@
         "title": "UX/UI Design",
         "description": "Create stylish and user-friendly interfaces that make interacting with your product easy and enjoyable."
       }
+    },
+    "PartnersSlider": {
+      "title": "Partners"
+    },
+    "ReviewsClients": {
+      "title": "Customer Reviews",
+      "button": "Become Our Client",
+      "prevArrowAlt": "Previous arrow",
+      "nextArrowAlt": "Next arrow",
+      "arrowAlt": "Black arrow to the right",
+      "reviews": [
+        {
+          "name": "Sanjari Akbarovich",
+          "position": "Psychotherapist",
+          "text": "Telegram bots developed for us have significantly simplified interaction with clients. Now everything works quickly and conveniently."
+        },
+        {
+          "name": "Zokir Athamovich",
+          "position": "Owner of Smile Design Dentistry",
+          "text": "Professional approach to brand and website creation. Clients now easily find us online, and they like our new image."
+        },
+        {
+          "name": "Matyakub Nazarovich",
+          "position": "Chief Physician at Intermed",
+          "text": "Excellent work! The team of professionals created a website for us that perfectly reflects our clinic and helps attract new patients."
+        },
+        {
+          "name": "Nigora Abdumutalovna",
+          "position": "Executive Director at Prime Medical Center",
+          "text": "Working with the agency exceeded all expectations. Our social networks became much more active, and advertising started delivering real results."
+        },
+        {
+          "name": "Alisher Bakhromovich",
+          "position": "ENT Surgeon",
+          "text": "Thank you for the quality SEO service. The website has become noticeably better visible in search engines, and the number of patients has increased."
+        }
+      ]
+    },
+    "Form": {
+      "title": "Registration is required",
+      "button": "Submit"
     }
   }
 }

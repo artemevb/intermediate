@@ -93,7 +93,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} bg-[#303030] `}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header locale={locale} />
           {children}

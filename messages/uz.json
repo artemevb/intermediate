@@ -66,6 +66,47 @@
         "title": "UX/UI Dizayn",
         "description": "Mahsulotingiz bilan oson va yoqimli aloqani ta'minlaydigan stil va foydalanuvchi uchun qulay interfeyslar yaratamiz."
       }
+    },
+    "PartnersSlider": {
+      "title": "Hamkorlar"
+    },
+    "ReviewsClients": {
+      "title": "Mijozlar Fikrlari",
+      "button": "Bizning Mijozimiz Bo'ling",
+      "prevArrowAlt": "Oldingi o'q",
+      "nextArrowAlt": "Keyingi o'q",
+      "arrowAlt": "Qora o'q o'ngga",
+      "reviews": [
+        {
+          "name": "Sanjari Akbarovich",
+          "position": "Psixoterapevt",
+          "text": "Biz uchun ishlab chiqilgan Telegram botlari mijozlar bilan o'zaro aloqani sezilarli darajada soddalashtirdi. Endi hammasi tez va qulay ishlaydi."
+        },
+        {
+          "name": "Zokir Athamovich",
+          "position": "Smile Design stomatologiyasining egasi",
+          "text": "Brend va veb-sayt yaratishda professional yondashuv. Mijozlar endi bizni onlayn topishadi va yangi imidjimizni yoqtirishadi."
+        },
+        {
+          "name": "Matyakub Nazarovich",
+          "position": "Intermed bosh shifokori",
+          "text": "Ajoyib ish! Mutaxassislar jamoasi biz uchun klinikamizni mukammal aks ettiruvchi va yangi bemorlarni jalb qilishga yordam beradigan veb-sayt yaratdi."
+        },
+        {
+          "name": "Nigora Abdumutalovna",
+          "position": "Prime Medical Center ijrochi direktori",
+          "text": "Agentlik bilan ishlash barcha kutganlarimizdan oshdi. Bizning ijtimoiy tarmoqlarimiz ancha faol bo'ldi va reklama haqiqiy natijalar berishni boshladi."
+        },
+        {
+          "name": "Alisher Bakhromovich",
+          "position": "Quloq, Burun, Tomoq jarrohisi",
+          "text": "Sifatli SEO-xizmati uchun rahmat. Veb-sayt qidiruv tizimlarida sezilarli darajada yaxshiroq ko'rinadigan bo'ldi va bemorlar soni oshdi."
+        }
+      ]
+    },
+    "Form": {
+      "title": "Ro‘yxatdan o‘tish majburiy",
+      "button": "Yuborish"
     }
   }
 }
