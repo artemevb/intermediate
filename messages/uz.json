@@ -106,7 +106,11 @@
     },
     "Form": {
       "title": "Ro‘yxatdan o‘tish majburiy",
-      "button": "Yuborish"
+      "button": "Yuborish",
+      "namePlaceholder": "Ismingizni kiriting",
+      "emailPlaceholder": "Emailingizni kiriting",
+      "phonePlaceholder": "Telefon raqamingizni kiriting",
+      "arrowAlt": "O'ngga qaragan qora o'q"
     }
   }
 }

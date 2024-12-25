@@ -106,7 +106,11 @@
     },
     "Form": {
       "title": "Обязательно зарегистрируйтесь",
-      "button": "Отправить"
+      "namePlaceholder": "Введите ваше имя",
+      "emailPlaceholder": "Введите ваш email",
+      "phonePlaceholder": "Введите ваш телефон",
+      "button": "Отправить",
+      "arrowAlt": "Черная стрелка направо"
     }
   }
 }

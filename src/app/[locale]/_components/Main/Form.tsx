@@ -39,17 +39,17 @@ export default function Form() {
                 <form className="space-y-[16px] mdx:space-y-[20px]">
                     <input
                         type="text"
-                        placeholder="Имя"
+                        placeholder={t("namePlaceholder") || "Имя"}
                         className="w-full p-[16px] mdx:p-[20px] rounded-[100px] border border-white bg-black/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
                     />
                     <input
                         type="email"
-                        placeholder="Email"
+                        placeholder={t("emailPlaceholder") || "Email"}
                         className="w-full p-[16px] mdx:p-[20px] rounded-[100px] border border-white bg-black/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
                     />
                     <input
-                        type="number"
-                        placeholder="Телефон"
+                        type="tel"
+                        placeholder={t("phonePlaceholder") || "Телефон"}
                         className="w-full p-[16px] mdx:p-[20px] rounded-[100px] border border-white bg-black/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
                     />
                     <div className="mt-6 flex justify-end">
@@ -72,6 +72,5 @@ export default function Form() {
                 </form>
             </div>
         </div>
-
     );
 };

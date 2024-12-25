@@ -3,6 +3,7 @@ import Image from "next/image";
 import bg from "@/public/image/Main/bgOneSection.png";
 import red from "@/public/image/Main/Red.png";
 import arrow_right_black from "@/public/svg/arrows/arrow_right_black.svg";
+import bg2 from "@/public/image/Main/black_friday.jpg";
 
 export default function ContentMarketing() {
     // const t = useTranslations("Main.ContentMarketing");
@@ -47,12 +48,12 @@ export default function ContentMarketing() {
                 </div>
                 <div className="max-3xl:hidden block w-full max-w-[560px] h-[492px]">
                     <Image
-                        src={bg}
+                        src={bg2}
                         alt="Background visual"
                         width={1560}
                         height={1492}
                         quality={100}
-                        className="rounded-lg shadow-lg w-full h-full"
+                        className="rounded-[40px] shadow-lg w-full h-full"
                     />
                 </div>
             </div>
