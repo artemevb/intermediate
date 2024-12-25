@@ -2,6 +2,7 @@
 import Card from "./Card";
 import ContentMarketing from "./ContentMarketing";
 import Services from "./Services";
+import LearningMarketing from "./LearningMarketing";
 
 // type Locale = 'ru' | 'uz' | 'en';
 
@@ -17,6 +18,7 @@ export default function Main() {
         <Card />
       </div>
       <Services />
+      <LearningMarketing />
     </div>
   );
 }
