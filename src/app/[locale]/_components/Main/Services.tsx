@@ -12,7 +12,7 @@ export default function Services() {
     const t = useTranslations("Main.Services");
 
     return (
-        <div className="max-w-[1440px] flex flex-col mx-auto px-[15px] w-full">
+        <div className="max-w-[1440px] flex flex-col mx-auto max-3xl:px-[15px] w-full">
             <div className="grid grid-cols-1 mdl:grid-cols-2 gap-[16px] mdx:gap-[20px]">
                 {/* Карточка 1 */}
                 <button
