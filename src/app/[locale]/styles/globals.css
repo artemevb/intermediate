@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border_radius_footer_mobile {
+    border-radius: 40px 40px 0px 0px;
+}
+
+.border_radius_footer {
+    border-radius: 100px 100px 0px 0px;
+}
+
+.border_radius_content_marketing {
+    border-radius: 0px 0px 30px 30px;
+}
+
+.border_radius_content_marketing_background {
+    border-radius: 0px 0px 60px 60px;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  

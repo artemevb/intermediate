@@ -1,0 +1,71 @@
+{
+  "Header": {
+    "menu": {
+      "changeLanguage": "Tilni o'zgartirish"
+    },
+    "close": "Yopish",
+    "discussProject": "Loyiha muhokamasi",
+    "call": "Qo'ng'iroq qilish",
+    "nav": {
+      "services": "Xizmatlar",
+      "cases": "Kuzatuvlar",
+      "blog": "Blog",
+      "aboutUs": "Biz haqimizda"
+    }
+  },
+  "Footer": {
+    "services": "Xizmatlar",
+    "aboutUs": "Biz haqimizda",
+    "cases": "Loyihalar",
+    "blog": "Blog",
+    "contacts": "Kontaktlar",
+    "marketing": "Marketing",
+    "info1": "© 2024 «Intermediate»",
+    "info2": "Taklifnoma",
+    "info3": "Maxfiylik siyosati"
+  },
+  "Main": {
+    "ContentMarketing": {
+      "cards": [
+        {
+          "title": "Biznesga Sho'ng‘ish",
+          "description": "Mahsulotingiz, auditoriya va maqsadlaringizni o‘rganamiz, yechimlar biznesingiz rivojiga xizmat qiladi."
+        },
+        {
+          "title": "Strategiyalarni Rivojlantirish",
+          "description": "Biznes o‘sishi uchun IT-yechimlar va marketing rejasini tuzamiz."
+        },
+        {
+          "title": "Foydalanuvchi Do'stona Yechimlar Yaratish",
+          "description": "Biz biznes muammolarini hal qiluvchi va mijozlarni jalb qiluvchi veb-saytlar va interfeyslar yaratamiz."
+        }
+      ]
+    },
+    "Services": {
+      "service1": {
+        "title": "Veb-saytlar yaratish",
+        "description": "Sotadigan veb-saytlar yaratamiz. Zamonaviy, foydalanuvchi uchun qulay va mijozlaringiz uchun optimallashtirilgan."
+      },
+      "service2": {
+        "title": "Chatbotlar yaratish",
+        "description": "Biznes vazifalarini avtomatlashtiramiz. Mijozlarga javob berishdan buyurtmalarni yig'ishga qadar — chatbotlar siz uchun ishlaydi."
+      },
+      "service3": {
+        "title": "Kontekstual Reklama",
+        "description": "Aniq reklama sozlamalari bilan mijozlarni jalb qilamiz. Minimal xarajatlar bilan maksimal daromad."
+      },
+      "service4": {
+        "title": "IT-sistemalar integratsiyasi",
+        "description": "Biznesni boshqarishni optimallashtiramiz: CRM, ERP va boshqa tizimlarni joriy qilamiz, bu ishni soddalashtiradi."
+      },
+      "service5": {
+        "title": "Texnik qo'llab-quvvatlash",
+        "description": "Biznesingizning barqaror ishlashini ta'minlaymiz: nosozliklarni bartaraf etamiz, veb-saytlarni yangilaymiz va serverlarni sozlaymiz."
+      },
+      "service6": {
+        "title": "UX/UI Dizayn",
+        "description": "Mahsulotingiz bilan oson va yoqimli aloqani ta'minlaydigan stil va foydalanuvchi uchun qulay interfeyslar yaratamiz."
+      }
+    }
+  }
+}

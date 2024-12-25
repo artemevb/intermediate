@@ -1,0 +1,71 @@
+{
+  "Header": {
+    "menu": {
+      "changeLanguage": "Change Language"
+    },
+    "close": "Close",
+    "discussProject": "Discuss Project",
+    "call": "Call",
+    "nav": {
+      "services": "Services",
+      "cases": "Cases",
+      "blog": "Blog",
+      "aboutUs": "About Us"
+    }
+  },
+  "Footer": {
+    "services": "Services",
+    "aboutUs": "About Us",
+    "cases": "Cases",
+    "blog": "Blog",
+    "contacts": "Contacts",
+    "marketing": "Marketing",
+    "info1": "© 2024 \"Intermediate\"",
+    "info2": "Offer",
+    "info3": "Privacy Policy"
+  },
+  "Main": {
+    "ContentMarketing": {
+      "cards": [
+        {
+          "title": "Immersing in Business",
+          "description": "We study your product, audience, and goals to ensure that the developed solutions contribute to the growth of your business."
+        },
+        {
+          "title": "Developing Strategies",
+          "description": "We will create a plan of IT solutions and marketing tools to grow your business."
+        },
+        {
+          "title": "Creating User-Friendly Solutions",
+          "description": "We design intuitive websites and interfaces that solve business challenges and attract customers."
+        }
+      ]
+    },
+    "Services": {
+      "service1": {
+        "title": "Website Development",
+        "description": "We create websites that sell. Modern, user-friendly, and optimized for your customers."
+      },
+      "service2": {
+        "title": "Chatbot Development",
+        "description": "Automate business tasks. From responding to customers to order collection — chatbots work for you."
+      },
+      "service3": {
+        "title": "Contextual Advertising",
+        "description": "Attract customers with precise ad targeting. Maximum return with minimal costs."
+      },
+      "service4": {
+        "title": "IT Systems Integration",
+        "description": "Optimize business management: implement CRM, ERP, and other systems that simplify operations."
+      },
+      "service5": {
+        "title": "Technical Support",
+        "description": "Ensure the stable operation of your business: eliminate disruptions, update websites, and configure servers."
+      },
+      "service6": {
+        "title": "UX/UI Design",
+        "description": "Create stylish and user-friendly interfaces that make interacting with your product easy and enjoyable."
+      }
+    }
+  }
+}
