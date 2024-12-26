@@ -16,7 +16,7 @@ export default function Subscribe() {
             {/* Основной блок формы */}
             <div className="relative bg-form p-[30px] mdx:p-[40px] 2xl:py-[120px] 2xl:px-[160px] rounded-[30px] mdx:rounded-[50px] xl:rounded-[80px] shadow-lg w-full z-10 2xl:flex 2xl:flex-row 2xl:gap-[117px] 2xl:justify-between 2xl:items-center overflow-hidden min-h-[352px] mdx:min-h-[413px] xl:min-h-[436px]">
                 {/* Градиенты */}
-                <div className="absolute bottom-[-150px] mdx:bottom-[-200px] xl:bottom-[-80px] left-[-40px] mdx:left-[0px] xl:left-[60%] 2xl:bottom-[-150px] 2xl:left-[50%] z-0 pointer-events-none">
+                <div className="absolute bottom-[-150px] max-mdx:w-full mdx:bottom-[-200px] xl:bottom-[-80px] left-[-40px] mdx:left-[0px] xl:left-[60%] 2xl:bottom-[-150px] 2xl:left-[50%] z-0 pointer-events-none">
                     <Image
                         src={red_rounded}
                         alt={t('redGradientCircle1')}
@@ -25,7 +25,7 @@ export default function Subscribe() {
                         className="w-full h-full opacity-70 xl:min-w-[641px] 2xl:min-w-[900px] xl:opacity-100"
                     />
                 </div>
-                <div className="absolute bottom-[-200px] mdx:hidden right-[-100px] z-0 pointer-events-none">
+                <div className="absolute max-mdx:w-full bottom-[-200px] mdx:hidden right-[-100px] z-0 pointer-events-none">
                     <Image
                         src={red_rounded2}
                         alt={t('redGradientCircle2')}
