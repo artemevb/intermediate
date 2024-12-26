@@ -5,7 +5,9 @@ import Services from "./Services";
 import LearningMarketing from "./LearningMarketing";
 import ReviewsClients from "./ReviewsClients";
 import PartnersSlider from "./PartnersSlider";
-
+import Result from "./Result";
+import Subscribe from "./Subscribe";
+import Map from "./Map";
 import Form from "./Form";
 
 // type Locale = 'ru' | 'uz' | 'en';
@@ -25,6 +27,9 @@ export default function Main() {
       <LearningMarketing />
       <ReviewsClients />
       <PartnersSlider />
+      <Result />
+      <Subscribe />
+      <Map />
       <Form />
     </div>
   );

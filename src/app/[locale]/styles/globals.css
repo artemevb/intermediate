@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.border_radius_footer_mobile {
-    border-radius: 40px 40px 0px 0px;
+/* Для экранов шириной до 1000px */
+@media (max-width: 999px) {
+    .border_radius_footer {
+        border-radius: 40px 40px 0px 0px; /* Стиль для мобильных устройств */
+    }
 }
 
-.border_radius_footer {
-    border-radius: 100px 100px 0px 0px;
+/* Для экранов шириной больше 1000px */
+@media (min-width: 1000px) {
+    .border_radius_footer {
+        border-radius: 100px 100px 0px 0px; /* Стиль для больших экранов */
+    }
 }
+
 
 .border_radius_content_marketing {
     border-radius: 0px 0px 30px 30px;

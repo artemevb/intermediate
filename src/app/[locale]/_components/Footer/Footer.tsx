@@ -33,7 +33,7 @@ export default function Footer({ locale }: LocaleProps) {
   const t = useTranslations('Footer');
 
   return (
-    <div className="bg-darkOverlay w-full pt-[30px] max-xl:border_radius_footer_mobile border_radius_footer xl:pt-[120px] щм">
+    <div className="bg-darkOverlay w-full pt-[30px] border_radius_footer xl:pt-[120px] щм">
       <div className="w-full max-w-[1440px] flex flex-col gap-[15px] mx-auto">
         <div className="w-full flex justify-between flex-col gap-[15px] px-[25px]">
           <div className="flex justify-between flex-row gap-5 items-center xl:hidden">
@@ -166,16 +166,16 @@ export default function Footer({ locale }: LocaleProps) {
 
               <div className="flex-1 flex items-center justify-center border-r border-[#5A5A5A]">
                 <div className="flex flex-col text-left text-[16px] mdx:text-[18px] xl:text-[20px] gap-[20px] mdx:gap-[10px] text-[#FFFFFF] font-medium xl:max-w-[110px] xl:gap-[30px]">
-                  <Link href={`/${locale}/services`}>{t('services')}</Link>
-                  <Link href={`/${locale}/aboutUs`}>{t('aboutUs')}</Link>
-                  <Link href={`/${locale}/cases`}>{t('cases')}</Link>
+                  <Link href={`/${locale}/services`} className="hover:text-[#B3B3B3]">{t('services')}</Link>
+                  <Link href={`/${locale}/aboutUs`} className="hover:text-[#B3B3B3]">{t('aboutUs')}</Link>
+                  <Link href={`/${locale}/cases`} className="hover:text-[#B3B3B3]">{t('cases')}</Link>
                 </div>
               </div>
               <div className="flex-1 flex items-center justify-center">
                 <div className="flex flex-col text-left text-[16px] mdx:text-[18px] xl:text-[20px] gap-[20px] mdx:gap-[10px] text-[#FFFFFF] font-medium xl:max-w-[163px] xl:gap-[30px]">
-                  <Link href={`/${locale}/blog`}>{t('blog')}</Link>
-                  <Link href={`/${locale}/contacts`}>{t('contacts')}</Link>
-                  <Link href={`/${locale}/marketing`}>{t('marketing')}</Link>
+                  <Link href={`/${locale}/blog`} className="hover:text-[#B3B3B3]">{t('blog')}</Link>
+                  <Link href={`/${locale}/contacts`} className="hover:text-[#B3B3B3]">{t('contacts')}</Link>
+                  <Link href={`/${locale}/marketing`} className="hover:text-[#B3B3B3]">{t('marketing')}</Link>
                 </div>
               </div>
             </div>

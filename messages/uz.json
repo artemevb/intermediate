@@ -111,6 +111,37 @@
       "emailPlaceholder": "Emailingizni kiriting",
       "phonePlaceholder": "Telefon raqamingizni kiriting",
       "arrowAlt": "O'ngga qaragan qora o'q"
+    },
+    "Map": {
+      "title": "Biz bilan bog'laning",
+      "contactUs": "Biz bilan bog'laning",
+      "phoneAlt": "Telefon",
+      "phoneNumber": "+998 50 900 47 38",
+      "ourLocation": "Bizning manzilimiz",
+      "locationAlt": "Manzil",
+      "address": "Toshkent sh., Chinobod ko'chasi, 10",
+      "writeTelegram": "Telegram orqali yozing",
+      "telegram": "Telegram",
+      "telegramAlt": "Telegram"
+    },
+    "Subscribe": {
+      "subscribeToUs": "Bizga obuna bo'ling",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "redGradientCircle1": "Qizil gradient doira 1",
+      "redGradientCircle2": "Qizil gradient doira 2",
+      "youtubeAlt": "YouTube belgisi",
+      "instagramAlt": "Instagram belgisi",
+      "telegramAlt": "Telegram belgisi"
+    },
+    "Result": {
+      "title": "Result Agency — muvaffaqiyat sari yo'lingiz",
+      "paragraph": "Result Agency — g'oyalarni natijaga aylantiradigan professional jamoa. Biz sizning biznesingizning o'sishiga qaratilgan kompleks marketing yechimlarida ixtisoslashganmiz. Result Agency bilan siz faqat xizmatlar emas, balki muvaffaqiyatingiz uchun ishlaydigan hamkorni qo'lga kiritasiz.",
+      "buttonText": "Bizning mijozimiz bo'ling",
+      "arrowAlt": "O'ngga qora o'q",
+      "gradient1Alt": "Qizil gradient aylana 1",
+      "gradient2Alt": "Qizil gradient aylana 2"
     }
   }
 }

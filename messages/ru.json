@@ -111,6 +111,37 @@
       "phonePlaceholder": "Введите ваш телефон",
       "button": "Отправить",
       "arrowAlt": "Черная стрелка направо"
+    },
+    "Map": {
+      "title": "Связаться с нами",
+      "contactUs": "Связаться с нами",
+      "phoneAlt": "Телефон",
+      "phoneNumber": "+998 50 900 47 38",
+      "ourLocation": "Наше местоположение",
+      "locationAlt": "Местоположение",
+      "address": "г. Ташкент, ул. Чинабад 10",
+      "writeTelegram": "Напишите из Telegram",
+      "telegram": "Telegram",
+      "telegramAlt": "Telegram"
+    },
+    "Subscribe": {
+      "subscribeToUs": "Подпишитесь на нас",
+      "youtube": "Ютуб",
+      "instagram": "Инстаграм",
+      "telegram": "Телеграм",
+      "redGradientCircle1": "Красный градиентный круг 1",
+      "redGradientCircle2": "Красный градиентный круг 2",
+      "youtubeAlt": "Иконка Ютуб",
+      "instagramAlt": "Иконка Инстаграм",
+      "telegramAlt": "Иконка Телеграм"
+    },
+    "Result": {
+      "title": "Result Agency — ваш путь к успеху",
+      "paragraph": "Result Agency — это команда профессионалов, которые превращают идеи в результат. Мы специализируемся на комплексных маркетинговых решениях, направленных на рост вашего бизнеса. С Result Agency вы получаете не просто услуги, а партнера, который работает на ваш успех.",
+      "buttonText": "Стать нашим клиентом",
+      "arrowAlt": "Стрелка вправо черная",
+      "gradient1Alt": "Красный градиентный круг 1",
+      "gradient2Alt": "Красный градиентный круг 2"
     }
   }
 }

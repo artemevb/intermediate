@@ -111,6 +111,37 @@
       "phonePlaceholder": "Enter your phone",
       "button": "Submit",
       "arrowAlt": "Black arrow pointing right"
+    },
+    "Map": {
+      "title": "Contact Us",
+      "contactUs": "Contact Us",
+      "phoneAlt": "Phone",
+      "phoneNumber": "+998 50 900 47 38",
+      "ourLocation": "Our Location",
+      "locationAlt": "Location",
+      "address": "Tashkent, Chinabad street, 10",
+      "writeTelegram": "Write via Telegram",
+      "telegram": "Telegram",
+      "telegramAlt": "Telegram"
+    },
+    "Subscribe": {
+      "subscribeToUs": "Subscribe to us",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "redGradientCircle1": "Red gradient circle 1",
+      "redGradientCircle2": "Red gradient circle 2",
+      "youtubeAlt": "YouTube icon",
+      "instagramAlt": "Instagram icon",
+      "telegramAlt": "Telegram icon"
+    },
+    "Result": {
+      "title": "Result Agency — Your Path to Success",
+      "paragraph": "Result Agency is a team of professionals who turn ideas into results. We specialize in comprehensive marketing solutions aimed at growing your business. With Result Agency, you get not just services, but a partner who works for your success.",
+      "buttonText": "Become Our Client",
+      "arrowAlt": "Black right arrow",
+      "gradient1Alt": "Red gradient circle 1",
+      "gradient2Alt": "Red gradient circle 2"
     }
   }
 }
