@@ -1,6 +1,5 @@
 
 import TextTitle from "../_components/About/TextTitle";
-import ContentMarketing from "./ContentMarketing";
 
 import PartnersSlider from "../_components/About/PartnerSliderWhite";
 import Map from "../_components/Main/Map";

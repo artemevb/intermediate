@@ -75,7 +75,7 @@ export default function LearningMarketing() {
                     {/* Первая карточка */}
                     <div className="bg-corporate rounded-[30px] mdx:rounded-[50px] flex flex-col justify-between gap-4 p-[30px] mdx:px-[40px] mdx:max-w-[705px] min-w-[300px] mdx:min-w-[536px] xl:pt-[100px] xl:min-w-[660px]">
                         <h3 className="text-[25px] mdx:text-[30px] xl:text-[50px] font-bold xl:leading-[65px] mdx:uppercase">
-                            Процесс работы максимально чистый и прозрачный
+                            Анализ, оптимизация, IT-решения, результаты
                         </h3>
                         <button className="inline-flex items-center justify-between pl-[12px] pr-[4px] py-[6px] mdx:pl-[30px] mdx:pr-[6px] mdx:py-[10px] bg-inherit text-white font-semibold rounded-full shadow hover:bg-red-500 transition duration-300 border-white border-[2px] text-[14px] mdx:text-[20px] mdl:text-[24px] max-w-[275px] mdx:max-w-[466px] whitespace-nowrap opacity-[0.9]">
                             Бесплатная консультация
@@ -97,10 +97,7 @@ export default function LearningMarketing() {
                             Продающие сайты и платформы
                         </h3>
                         <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
-                            Разрабатываем современные сайты и платформы, которые не только
-                            привлекают клиентов, но и улучшают взаимодействие с вашим брендом.
-                            {"\n"}🔹Дизайн, который цепляет и вдохновляет
-                            {"\n"}🔹Функционал, адаптированный под задачи бизнеса
+                            Разрабатываем современные сайты и платформы для привлечения клиентов и повышения взаимодействия
                         </p>
                         <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
                             Подробнее
@@ -120,13 +117,10 @@ export default function LearningMarketing() {
                     {/* Третья карточка */}
                     <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[400px] max-w-[474px] xl:min-w-[484px]">
                         <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
-                            Настройка рекламы, которая работает
+                            Настройка рекламы
                         </h3>
                         <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
-                            Настраиваем рекламу и таргетинг так, чтобы привлекать нужную
-                            аудиторию с минимальными затратами и максимальной эффективностью.
-                            {"\n"}🔹Точный анализ и сегментация аудитории
-                            {"\n"}🔹Прозрачные отчёты и постоянная оптимизация
+                            Настраиваем рекламу и таргетинг, чтобы привлекать нужную аудиторию
                         </p>
                         <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
                             Подробнее
