@@ -167,7 +167,7 @@ export default function Footer({ locale }: LocaleProps) {
               <div className="flex-1 flex items-center justify-center border-r border-[#5A5A5A]">
                 <div className="flex flex-col text-left text-[16px] mdx:text-[18px] xl:text-[20px] gap-[20px] mdx:gap-[10px] text-[#FFFFFF] font-medium xl:max-w-[110px] xl:gap-[30px]">
                   <Link href={`/${locale}/services`} className="hover:text-[#B3B3B3]">{t('services')}</Link>
-                  <Link href={`/${locale}/aboutUs`} className="hover:text-[#B3B3B3]">{t('aboutUs')}</Link>
+                  <Link href={`/${locale}/about`} className="hover:text-[#B3B3B3]">{t('aboutUs')}</Link>
                   <Link href={`/${locale}/cases`} className="hover:text-[#B3B3B3]">{t('cases')}</Link>
                 </div>
               </div>

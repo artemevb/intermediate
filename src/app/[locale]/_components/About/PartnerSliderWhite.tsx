@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
-import pauseIcon from "@/public/svg/arrows/Pause.svg";
-import playIcon from "@/public/svg/arrows/play.svg";
-import arrowLeft from "@/public/svg/arrows/ArrowsLeftWhite.svg";
-import arrowRight from "@/public/svg/arrows/ArrowsRightWhite.svg";
+import pauseIcon from "@/public/svg/tools/pause_black.svg";
+import playIcon from "@/public/svg/tools/play_black.svg";
+import arrowLeft from "@/public/svg/arrows/arrowsLeftBlack.svg";
+import arrowRight from "@/public/svg/arrows/arrowsRightBlack.svg";
 import { useTranslations } from "next-intl";
 
 const partnersLogos = [
@@ -108,8 +108,8 @@ export default function PartnersSlider() {
     };
 
     return (
-        <div className="bg-[#303030] text-white w-full">
-            <h2 className="text-left text-[24px] mdx:text-[40px] xl:text-[60px] mb-[20px] xl:mb-[40px] font-bold max-3xl:pl-[20px] pl-[2.6%] 4xl:pl-[12%] w-full">{t('title')}</h2>
+        <div className="bg-[#fff] text-[#303030] w-full">
+            <h2 className="text-left text-[24px] mdx:text-[40px] xl:text-[60px] mb-[20px] xl:mb-[40px] font-bold max-3xl:pl-[20px] pl-[18.5%] 4xl:pl-[25%] w-full">{t('title')}</h2>
 
             <Marquee
                 direction="left"
@@ -192,7 +192,8 @@ export default function PartnersSlider() {
                 {/* Кнопка: Быстрее (стрелка вправо) */}
                 <button
                     onClick={handleFaster}
-                    className="rounded-full w-8 h-8 flex items-center justify-center hover:opacity-70 transition w-[20px] h-[20px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px]"
+                    className="rounded-full w-[20px] h-[20px] md:w-[32px] md:h-[32px] xl:w-[48px] xl:h-[48px] 
+                     flex items-center justify-center hover:opacity-70 transition"
                 >
                     <Image src={arrowRight} alt="Faster" width={100} height={100} quality={100} />
                 </button>

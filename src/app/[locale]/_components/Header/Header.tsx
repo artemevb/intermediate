@@ -33,7 +33,7 @@ const Header = ({ locale }: LocaleProps) => {
     },
     {
       title: t('nav.aboutUs'),
-      slug: 'aboutUs',
+      slug: 'about',
     },
   ];
 
