@@ -109,7 +109,7 @@ const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
       <div className="h-full items-center flex gap-[8px] xl:gap-[12px]">
 
         <a
-          href="tel:+998785558787"
+          href="tel:+998509004738"
           // onClick={handlePhoneClick}
           className="border border-[#303030] px-[16px] py-[16px] rounded-full max-mdx:px-3 max-mdx:py-3 hidden xl:block"
         >

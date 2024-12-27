@@ -177,7 +177,7 @@ const Menu: React.FC<MenuProps> = ({ menu, closeMenu, navOptions, locale }) => {
           </button>
 
           <a
-            href="tel:+998785558787" className="border rounded-full border-[#303030] flex flex-row items-center pr-[4px] max-w-[146px]">
+            href="tel:+998509004738" className="border rounded-full border-[#303030] flex flex-row items-center pr-[4px] max-w-[146px]">
             <p className="text-[#303030] pl-[10px] py-[16px] pr-[10px] text-[14px] font-semibold whitespace-nowrap">{t('call')}</p>
             <div className=" rounded-full bg-[#000000] w-[37px] h-[37px] flex items-center justify-center">
               <Image

@@ -1,4 +1,4 @@
-// import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import '@/src/app/[locale]/styles/globals.css';
 import Header from '@/src/app/[locale]/_components/Header/Header';
@@ -6,52 +6,52 @@ import Footer from '@/src/app/[locale]/_components/Footer/Footer';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-// import Script from 'next/script';
+import Script from 'next/script';
 import BodyWrapper from './_components/BodyWrapper';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['300', '400', '700', '900'], fallback: ['sans-serif'] });
 
-
-// export const metadata: Metadata = {
-//   title: 'RMC De Luxe – Rental and Sale of Real Estate in UAE',
-//   description: 'Professional rental and sales services for real estate in UAE from RMC De Luxe. A reliable partner for individual and corporate clients.',
-//   keywords:
-//     'real estate agency, real estate Tashkent, real estate rental, real estate sales, RMC De Luxe, UAE, real estate UAE, luxury real estate',
-//   authors: [{ name: 'RMC De Luxe', url: 'https://rmcdeluxe.com' }],
-//   viewport: 'width=device-width, initial-scale=1',
-//   openGraph: {
-//     type: 'website',
-//     locale: 'en_US',
-//     url: 'https://rmcdeluxe.com',
-//     title: 'RMC De Luxe – Rental and Sale of Real Estate in UAE',
-//     description: 'Professional rental and sales services for real estate in UAE from RMC De Luxe. A reliable partner for individual and corporate clients.',
-//     siteName: 'RMC De Luxe',
-//     images: [
-//       {
-//         url: 'https://rmcdeluxe.com/og-image.jpg?v=2',
-//         width: 1200,
-//         height: 630,
-//         alt: 'RMC De Luxe - Real Estate in UAE',
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: 'RMC De Luxe - Real Estate Agency in UAE',
-//     description: 'Professional rental and sales services for real estate in UAE.',
-//     images: 'https://rmcdeluxe.com/og-image.jpg?v=2',
-//   },
-//   icons: {
-//     icon: '/favicon.ico',
-//   },
-//   alternates: {
-//     canonical: 'https://rmcdeluxe.com',
-//     languages: {
-//       ru: '/ru',
-//       en: '/en',
-//     },
-//   },
-// };
+export const metadata: Metadata = {
+  title: 'InterMediate – IT-решения для вашего бизнеса',
+  description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
+  keywords:
+    'IT-услуги, веб-разработка, автоматизация бизнес-процессов, цифровые решения, маркетинг, рост бизнеса, InterMediate, IT агентство',
+  authors: [{ name: 'InterMediate', url: 'https://intermediate.uz' }],
+  viewport: 'width=device-width, initial-scale=1',
+  openGraph: {
+    type: 'website',
+    locale: 'ru_RU',
+    url: 'https://intermediate.uz',
+    title: 'InterMediate – IT-решения для вашего бизнеса',
+    description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
+    siteName: 'InterMediate',
+    images: [
+      {
+        url: 'https://intermediate.uz/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'InterMediate',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'InterMediate – IT-решения для вашего бизнеса',
+    description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы.',
+    images: 'https://intermediate.uz/og-image.png',
+  },
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: 'https://intermediate.uz',
+    languages: {
+      ru: '/ru',
+      en: '/en',
+      uz: '/uz',
+    },
+  },
+};
 
 export type Locales = 'ru' | 'en' | 'uz';
 
@@ -69,27 +69,25 @@ export default async function RootLayout({
   // Получаем сообщения для текущей локали
   const messages = await getMessages({ locale });
 
-  // Структурированные данные
-  // const structuredData = {
-  //   "@context": "https://schema.org",
-  //   "@type": "RealEstateAgent",
-  //   "name": "RMC De Luxe",
-  //   "url": 'https://rmcdeluxe.com',
-  //   "description": locale === 'en'
-  //     ? "RMC De Luxe provides rental and sales services for real estate in UAE. Professional approach for individual and corporate clients."
-  //     : "RMC De Luxe provides rental and sales services for real estate in UAE. Professional approach for individual and corporate clients.", 
-  //   "address": {
-  //     "@type": "PostalAddress",
-  //     "streetAddress": "Deira, Baniyas road, Twin Towers, 20th floor, Office number 10",
-  //     "addressLocality": "Tashkent",
-  //     "postalCode": "100000",
-  //     "addressCountry": "AE"
-  //   },
-  //   "telephone": "+9989785558787",
-  //   "openingHours": "Mo-Fr 09:00-18:00",
-  //   "image": "https://rmcdeluxe.com/og-image.jpg?v=2",
-  //   "priceRange": "AED"
-  // };
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "InterMediate",
+    "url": 'https://intermediate.uz',
+    "description": 
+      "InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Мы комбинируем технологии и стратегию для вашего успеха.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Узбекистан, г. Ташкент, ул. Чинадабд 2",
+      "addressLocality": "Tashkent",
+      "postalCode": "100000",
+      "addressCountry": "UZ"
+    },
+    "telephone": "+998509004738",
+    "openingHours": "Mo-Fr 10:00-19:00",
+    "image": "https://intermediate.uz/og-image.jpg",
+    "priceRange": "USD"
+  };
 
   return (
     <html lang={locale} className={montserrat.className}>
@@ -98,6 +96,11 @@ export default async function RootLayout({
           <Header locale={locale} />
           {children}
           <Footer locale={locale} />
+          <Script
+            id="structured-data"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          />
         </NextIntlClientProvider>
       </BodyWrapper>
     </html>
