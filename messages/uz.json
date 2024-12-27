@@ -142,6 +142,26 @@
       "arrowAlt": "O'ngga qora o'q",
       "gradient1Alt": "Qizil gradient aylana 1",
       "gradient2Alt": "Qizil gradient aylana 2"
+    },
+    "ContentMarketingBlock": {
+      "intermediate": "O‘rta daraja: Biznesingizni rivojlantirish uchun IT yechimlari",
+      "title": "Biznesingizni rivojlantirish yechimlari",
+      "description": "Biz saytlar yaratamiz, reklama sozlaymiz va jarayonlarni avtomatlashtiramiz, shunda biznesingiz tezroq o‘sadi va samarali ishlaydi.",
+      "button": "Vazifani muhokama qilish"
+    },
+    "LearningMarketing": {
+      "path_from_idea_to_result": "G'oyadan natijagacha bo'lgan yo'l",
+      "analysis_optimization_it_solutions_results": "Tahlil, optimizatsiya, IT yechimlari, natijalar",
+      "free_consultation": "Bepul maslahat",
+      "selling_websites_and_platforms": "Sotuvga mo'ljallangan veb-saytlar va platformalar",
+      "develop_modern_websites_and_platforms": "Mijozlarni jalb qilish va o'zaro aloqani oshirish uchun zamonaviy veb-saytlar va platformalarni ishlab chiqamiz",
+      "more_details": "Batafsil",
+      "advertising_setup": "Reklama sozlamasi",
+      "setup_advertising_and_targeting": "To'g'ri auditoriyani jalb qilish uchun reklamani va maqsadlashni sozlaymiz",
+      "arrow_left_red_alt": "Qizil chap o'q",
+      "arrow_right_red_alt": "Qizil o'ng o'q",
+      "arrow_right_black_alt": "Qora o'ng o'q",
+      "arrow_red_alt": "Qizil o'q"
     }
   },
   "Modal": {

@@ -142,6 +142,26 @@
       "arrowAlt": "Стрелка вправо черная",
       "gradient1Alt": "Красный градиентный круг 1",
       "gradient2Alt": "Красный градиентный круг 2"
+    },
+    "ContentMarketingBlock": {
+      "intermediate": "Intermediate: IT-решения для роста вашего бизнеса",
+      "title": "Решения для роста вашего бизнеса",
+      "description": "Мы создаём сайты, настраиваем рекламу и автоматизируем процессы, чтобы ваш бизнес рос быстрее и работал эффективнее.",
+      "button": "Обсудить задачу"
+    },
+    "LearningMarketing": {
+      "path_from_idea_to_result": "Путь от идеи до результата",
+      "analysis_optimization_it_solutions_results": "Анализ, оптимизация, IT-решения, результаты",
+      "free_consultation": "Бесплатная консультация",
+      "selling_websites_and_platforms": "Продающие сайты и платформы",
+      "develop_modern_websites_and_platforms": "Разрабатываем современные сайты и платформы для привлечения клиентов и повышения взаимодействия",
+      "more_details": "Подробнее",
+      "advertising_setup": "Настройка рекламы",
+      "setup_advertising_and_targeting": "Настраиваем рекламу и таргетинг, чтобы привлекать нужную аудиторию",
+      "arrow_left_red_alt": "Красная стрелка влево",
+      "arrow_right_red_alt": "Красная стрелка вправо",
+      "arrow_right_black_alt": "Черная стрелка вправо",
+      "arrow_red_alt": "Красная стрелка"
     }
   },
   "Modal": {

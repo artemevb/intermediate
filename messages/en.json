@@ -142,6 +142,26 @@
       "arrowAlt": "Black right arrow",
       "gradient1Alt": "Red gradient circle 1",
       "gradient2Alt": "Red gradient circle 2"
+    },
+    "ContentMarketingBlock": {
+      "intermediate": "Intermediate: IT Solutions for Growing Your Business",
+      "title": "Solutions for growing your business",
+      "description": "We create websites, set up advertising, and automate processes to help your business grow faster and work more efficiently.",
+      "button": "Discuss the task"
+    },
+    "LearningMarketing": {
+      "path_from_idea_to_result": "The Path from Idea to Result",
+      "analysis_optimization_it_solutions_results": "Analysis, Optimization, IT Solutions, Results",
+      "free_consultation": "Free Consultation",
+      "selling_websites_and_platforms": "Selling Websites and Platforms",
+      "develop_modern_websites_and_platforms": "We develop modern websites and platforms to attract customers and enhance engagement",
+      "more_details": "Learn More",
+      "advertising_setup": "Advertising Setup",
+      "setup_advertising_and_targeting": "We set up advertising and targeting to attract the right audience",
+      "arrow_left_red_alt": "Red left arrow",
+      "arrow_right_red_alt": "Red right arrow",
+      "arrow_right_black_alt": "Black right arrow",
+      "arrow_red_alt": "Red arrow"
     }
   },
   "Modal": {
