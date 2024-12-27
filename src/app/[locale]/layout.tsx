@@ -7,7 +7,7 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 // import Script from 'next/script';
-
+import BodyWrapper from './_components/BodyWrapper';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['300', '400', '700', '900'], fallback: ['sans-serif'] });
 
@@ -92,14 +92,14 @@ export default async function RootLayout({
   // };
 
   return (
-    <html lang={locale}>
-      <body className={`${montserrat.className} bg-[#303030] `}>
+    <html lang={locale} className={montserrat.className}>
+      <BodyWrapper>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header locale={locale} />
           {children}
           <Footer locale={locale} />
         </NextIntlClientProvider>
-      </body>
+      </BodyWrapper>
     </html>
   );
 }

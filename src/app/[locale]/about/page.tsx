@@ -3,7 +3,7 @@ import TextTitle from "../_components/About/TextTitle";
 
 import PartnersSlider from "../_components/About/PartnerSliderWhite";
 import Map from "../_components/Main/Map";
-import Form from "../_components/Main/Form";
+import Form from "../_components/About/Form";
 
 // type Locale = 'ru' | 'uz' | 'en';
 

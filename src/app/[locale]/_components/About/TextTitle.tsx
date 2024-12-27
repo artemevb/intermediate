@@ -3,8 +3,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import ellipse from "@/public/svg/tools/RedEllipse.svg";
 import arrow_right_black from "@/public/svg/arrows/arrow_right_black.svg";
-import ImedLogo from "@/public/image/Logo/imed.jpg";
+import ImedLogo from "@/public/image/Logo/imed2.jpg";
 import RmcLogo from "@/public/image/Logo/rmc.jpg";
+
 
 export default function TextTitle() {
     const t = useTranslations("About.TextTitle");
@@ -30,7 +31,7 @@ export default function TextTitle() {
                     <div>
                         <Image
                             src={ImedLogo}
-                            alt="imed"
+                            alt="imed Logo"
                             quality={100}
                             className="w-[64px] h-[64px] mdx:w-[100px] mdx:h-[100px] xl:w-[120px] xl:h-[120px] object-contain" />
                     </div>
@@ -48,7 +49,7 @@ export default function TextTitle() {
                     <div>
                         <Image
                             src={RmcLogo}
-                            alt="imed"
+                            alt="Rmc Logo"
                             quality={100}
                             className="w-[64px] h-[64px] mdx:w-[100px] mdx:h-[100px] xl:w-[120px] xl:h-[120px] object-contain" />
                     </div>

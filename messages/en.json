@@ -143,5 +143,33 @@
       "gradient1Alt": "Red gradient circle 1",
       "gradient2Alt": "Red gradient circle 2"
     }
+  },
+  "Modal": {
+    "title": "Your application \n has been sent",
+    "subtitle": "Our managers will contact you shortly",
+    "button": "Ok",
+    "title_call": "Contact us \n to clarify prices",
+    "call_tg": "Write in Telegram",
+    "type-of-service": "Submit an application",
+    "info": "Full name",
+    "telephone-number": "Phone number",
+    "text-3": "Choose a service",
+    "send": "Send",
+    "enter_valid_phone_number": "Enter a valid number",
+    "enter_full_name": "Enter full name",
+    "correct": "Correct",
+    "services-1": "Website development",
+    "services-2": "Telegram bot development",
+    "services-3": "SMM",
+    "services-4": "SEO",
+    "services-5": "Advertising launch",
+    "services-6": "Branding",
+    "services-7": "Corporate style",
+    "full-name": "Name",
+    "comment": "Comment"
+  },
+  "Tools": {
+    "button": "Discuss the project",
+    "menu": "Menu"
   }
 }

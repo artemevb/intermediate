@@ -7,8 +7,10 @@ import arrow_white from "@/public/svg/arrows/right_white.svg";
 import Menu from "../Menu";
 import Image from "next/image";
 import burgerMenu from "@/public/svg/tools/burger-menu.svg";
+import { useTranslations } from "next-intl";
 // import Link from "next/link";
-import { NavItem } from "./NavItem"; // Убедитесь, что путь корректен
+import { NavItem } from "./NavItem";
+import Application from '../Modals/Application'
 // import axios from 'axios';
 
 interface NavigationProps {
@@ -17,9 +19,11 @@ interface NavigationProps {
 }
 
 const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
+  const t = useTranslations('Tools');
   const [menu, setMenu] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isPending, startTransition] = useTransition();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const router = useRouter();
   const pathname = usePathname();
@@ -38,6 +42,15 @@ const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
     ru: 'Ру',
     uz: 'O`z',
   };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
 
   const handleOpenMenu = () => {
     setMenu(true);
@@ -157,8 +170,11 @@ const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
             </div>
           )}
         </div>
-        <button className="border rounded-full border-[#303030] hidden xl:flex flex-row items-center pr-[6px]">
-          <p className="text-[#303030] pl-[24px] py-[16px] pr-[10px] text-[18px] font-semibold">Обсудить проект</p>
+
+        <button
+          onClick={openModal}
+          className="group border rounded-full border-[#303030] hidden xl:flex flex-row items-center pr-[6px]">
+          <p className="text-[#303030] pl-[24px] py-[16px] pr-[10px] text-[18px] font-semibold">{t('button')}</p>
           <div className=" rounded-full bg-[#000000] w-[40px] h-[40px] flex items-center justify-center">
             <Image
               src={arrow_white}
@@ -166,6 +182,7 @@ const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
               width={20}
               height={20}
               quality={100}
+              className="transition-transform duration-300 transform group-hover:translate-x-[10px]"
             />
 
           </div>
@@ -184,7 +201,7 @@ const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
             />
 
           </div>
-          <p className="text-[16px] font-bold text-[#303030] ml-[4px]">Меню</p>
+          <p className="text-[16px] font-bold text-[#303030] ml-[4px]">{t('menu')}</p>
         </button>
 
         {/* Рендер компонента Menu */}
@@ -192,6 +209,7 @@ const LocalSwitcher: React.FC<NavigationProps> = ({ navOptions, locale }) => {
           <Menu menu={menu} closeMenu={handleCloseMenu} navOptions={navOptions} locale={locale} />
         )}
       </div>
+      {isModalOpen && <Application closeModal={closeModal} />}
     </div>
   );
 };

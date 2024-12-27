@@ -11,7 +11,7 @@ export default function Form() {
     return (
         <div className="relative w-full mx-auto max-w-[1720px] flex justify-center items-center pb-[100px] mdx:pb-[120px] max-4xl:px-[15px]">
             {/* Основной блок формы */}
-            <div className="relative  bg-form p-[30px] mdx:p-[40px] 2xl:py-[120px] 2xl:px-[160px] rounded-[30px] mdx:rounded-[50px] xl:rounded-[80px] shadow-lg w-full z-10 2xl:flex 2xl:flex-row 2xl:gap-[117px] 2xl:justify-between overflow-hidden">
+            <div className="relative  bg-[#303030] p-[30px] mdx:p-[40px] 2xl:py-[120px] 2xl:px-[160px] rounded-[30px] mdx:rounded-[50px] xl:rounded-[80px] shadow-lg w-full z-10 2xl:flex 2xl:flex-row 2xl:gap-[117px] 2xl:justify-between overflow-hidden">
                 {/* Градиенты */}
                 <div className="absolute bottom-[-150px] left-[-150px] z-0 pointer-events-none">
                     <Image

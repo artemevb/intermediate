@@ -109,7 +109,7 @@ export default function PartnersSlider() {
 
     return (
         <div className="bg-[#fff] text-[#303030] w-full">
-            <h2 className="text-left text-[24px] mdx:text-[40px] xl:text-[60px] mb-[20px] xl:mb-[40px] font-bold max-3xl:pl-[20px] pl-[18.5%] 4xl:pl-[25%] w-full">{t('title')}</h2>
+            <h2 className="text-left text-[24px] mdx:text-[40px] xl:text-[60px] mb-[20px] xl:mb-[40px] font-bold max-3xl:pl-[20px] pl-[18.5%] 4xl:pl-[24.8%] w-full">{t('title')}</h2>
 
             <Marquee
                 direction="left"

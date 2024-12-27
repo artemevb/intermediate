@@ -143,5 +143,33 @@
       "gradient1Alt": "Qizil gradient aylana 1",
       "gradient2Alt": "Qizil gradient aylana 2"
     }
+  },
+  "Modal": {
+    "title": "Sizning arizangiz \n yuborildi",
+    "subtitle": "Bizning menejerlarimiz siz bilan yaqinda bog‘lanishadi",
+    "button": "Ok",
+    "title_call": "Narxlarni aniqlashtirish uchun \n biz bilan bog‘laning",
+    "call_tg": "Telegramga yozish",
+    "type-of-service": "Ariza qoldiring",
+    "info": "To‘liq ism",
+    "telephone-number": "Telefon raqami",
+    "text-3": "Xizmatni tanlang",
+    "send": "Yuborish",
+    "enter_valid_phone_number": "To‘g‘ri raqam kiriting",
+    "enter_full_name": "To‘liq ism kiriting",
+    "correct": "To‘g‘ri",
+    "services-1": "Veb-sayt yaratish",
+    "services-2": "Telegram bot yaratish",
+    "services-3": "SMM",
+    "services-4": "SEO",
+    "services-5": "Reklama boshlash",
+    "services-6": "Brending",
+    "services-7": "Korporativ uslub",
+    "full-name": "Ism",
+    "comment": "Izoh"
+  },
+  "Tools": {
+    "button": "Loyihani muhokama qilish",
+    "menu": "Menyu"
   }
 }

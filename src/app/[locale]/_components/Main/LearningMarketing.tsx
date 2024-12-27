@@ -77,7 +77,7 @@ export default function LearningMarketing() {
                         <h3 className="text-[25px] mdx:text-[30px] xl:text-[50px] font-bold xl:leading-[65px] mdx:uppercase">
                             Анализ, оптимизация, IT-решения, результаты
                         </h3>
-                        <button className="inline-flex items-center justify-between pl-[12px] pr-[4px] py-[6px] mdx:pl-[30px] mdx:pr-[6px] mdx:py-[10px] bg-inherit text-white font-semibold rounded-full shadow hover:bg-red-500 transition duration-300 border-white border-[2px] text-[14px] mdx:text-[20px] mdl:text-[24px] max-w-[275px] mdx:max-w-[466px] whitespace-nowrap opacity-[0.9]">
+                        <button className="group inline-flex items-center justify-between pl-[12px] pr-[4px] py-[6px] mdx:pl-[30px] mdx:pr-[6px] mdx:py-[10px] bg-inherit text-white font-semibold rounded-full shadow hover:bg-red-500 transition duration-300 border-white border-[2px] text-[14px] mdx:text-[20px] mdl:text-[24px] max-w-[275px] mdx:max-w-[466px] whitespace-nowrap opacity-[0.9] xl:mt-[70px]">
                             Бесплатная консультация
                             <span className="ml-[10px] hover:pl-4 transition-all duration-200 bg-white rounded-full w-[40px] h-[40px] mdx:w-[60px] mdx:h-[60px] flex items-center justify-center">
                                 <Image
@@ -85,56 +85,58 @@ export default function LearningMarketing() {
                                     alt="arrow right black"
                                     width={100}
                                     height={100}
-                                    className="rounded-lg w-[20px] h-[20px] mdx:w-[30px] mdx:h-[30px]"
+                                    className="rounded-lg w-[20px] h-[20px] mdx:w-[30px] mdx:h-[30px] transition-transform duration-300 transform group-hover:translate-x-[10px]"
                                 />
                             </span>
                         </button>
                     </div>
 
                     {/* Вторая карточка */}
-                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[434px] max-w-[474px] xl:min-w-[484px]">
-                        <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
-                            Продающие сайты и платформы
-                        </h3>
-                        <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
-                            Разрабатываем современные сайты и платформы для привлечения клиентов и повышения взаимодействия
-                        </p>
-                        <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
-                            Подробнее
-                            <span className="ml-2 transition-transform duration-200 group-hover:translate-x-2">
-                                <Image
-                                    src={arrow_red}
-                                    alt="arrow red"
-                                    width={25}
-                                    height={25}
-                                    className="w-[25px] h-[25px]"
-                                />
-                            </span>
-                        </button>
-
+                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col justify-between gap-4 min-w-[300px] mdx:min-w-[434px] max-w-[474px] xl:min-w-[484px]">
+                        <div className=" flex flex-col justify-between w-full mdx:h-[70%]">
+                            <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
+                                Продающие сайты и платформы
+                            </h3>
+                            <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
+                                Разрабатываем современные сайты и платформы для привлечения клиентов и повышения взаимодействия
+                            </p>
+                            <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
+                                Подробнее
+                                <span className="ml-2 transition-transform duration-200 group-hover:translate-x-2">
+                                    <Image
+                                        src={arrow_red}
+                                        alt="arrow red"
+                                        width={25}
+                                        height={25}
+                                        className="w-[25px] h-[25px]"
+                                    />
+                                </span>
+                            </button>
+                        </div>
                     </div>
 
                     {/* Третья карточка */}
-                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col gap-4 min-w-[300px] mdx:min-w-[400px] max-w-[474px] xl:min-w-[484px]">
-                        <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
-                            Настройка рекламы
-                        </h3>
-                        <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
-                            Настраиваем рекламу и таргетинг, чтобы привлекать нужную аудиторию
-                        </p>
-                        <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
-                            Подробнее
-                            <span className="ml-2 transition-transform duration-200 group-hover:translate-x-2">
-                                <Image
-                                    src={arrow_red}
-                                    alt="arrow red"
-                                    width={25}
-                                    height={25}
-                                    className="w-[25px] h-[25px]"
-                                />
-                            </span>
-                        </button>
-
+                    <div className="bg-white text-black rounded-[30px] mdx:rounded-[50px] p-6 md:p-8 xl:pt-[100px] flex flex-col justify-between gap-4 min-w-[300px] mdx:min-w-[400px] max-w-[474px] xl:min-w-[484px] ">
+                        <div className=" flex flex-col justify-between w-full mdx:h-[70%]">
+                            <h3 className="text-[18px] mdx:text-[30px] xl:text-[45px] font-semibold text-[#010101] mdx:uppercase xl:leading-[55px]">
+                                Настройка рекламы
+                            </h3>
+                            <p className="text-[14px] mdx:text-[18px] xl:text-[20px] whitespace-pre-line leading-[28px] text-[#A6A6A6]">
+                                Настраиваем рекламу и таргетинг, чтобы привлекать нужную аудиторию
+                            </p>
+                            <button className="group flex items-center font-semibold text-corporate w-fit text-[14px] mdx:text-[18px]">
+                                Подробнее
+                                <span className="ml-2 transition-transform duration-200 group-hover:translate-x-2">
+                                    <Image
+                                        src={arrow_red}
+                                        alt="arrow red"
+                                        width={25}
+                                        height={25}
+                                        className="w-[25px] h-[25px]"
+                                    />
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

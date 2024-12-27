@@ -16,13 +16,20 @@
     }
 }
 
-
-.border_radius_content_marketing {
-    border-radius: 0px 0px 30px 30px;
+@media (max-width: 999px) {
+    .border_radius_content_marketing {
+        border-radius: 0px 0px 30px 30px;
+    }
 }
 
-.border_radius_content_marketing_background {
-    border-radius: 0px 0px 60px 60px;
+@media (min-width: 1000px) {
+    .border_radius_content_marketing {
+        border-radius: 0px 0px 60px 60px;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .no-scrollbar {

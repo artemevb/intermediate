@@ -1,16 +1,28 @@
+"use client"
 // import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
 import bg from "@/public/image/Main/bgOneSection.png";
 import red from "@/public/image/Main/Red.png";
 import arrow_right_black from "@/public/svg/arrows/arrow_right_black.svg";
 import bg2 from "@/public/image/Main/black_friday.jpg";
+import Application from '../Modals/Application'
 
 export default function ContentMarketing() {
     // const t = useTranslations("Main.ContentMarketing");
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <div
-            className="relative flex flex-col items-start justify-center w-full mx-auto bg-cover bg-center bg-no-repeat border_radius_content_marketing mdx:border_radius_content_marketing_background max-2xl:px-[15px] mdl:px-[40px] 2xl:px-0"
+            className="relative flex flex-col items-start justify-center w-full mx-auto bg-cover bg-center bg-no-repeat border_radius_content_marketing max-2xl:px-[15px] mdl:px-[40px] 2xl:px-0"
             style={{
                 backgroundImage: `url(${bg.src})`,
             }}
@@ -33,7 +45,9 @@ export default function ContentMarketing() {
                     <p className="text-[#A6A6A6] mb-[10px] mdx:mb-[20px] xl:mb-[30px] text-[16px] mdx:font-medium mdx:text-[18px] 2xl:text-[20px] mdx:max-w-[573px]  2xl:max-w-[743px]">
                         Мы создаём сайты, настраиваем рекламу и автоматизируем процессы, чтобы ваш бизнес рос быстрее и работал эффективнее.
                     </p>
-                    <button className="inline-flex items-center justify-center pl-[12px] pr-[4px] py-[4px] mdx:pl-[24px] mdx:pr-[6px] mdx:py-[6px] bg-corporate text-white text-[14px] font-semibold rounded-full shadow hover:bg-red-600 transition duration-300">
+                    <button
+                        onClick={openModal}
+                        className="group inline-flex items-center justify-center pl-[12px] pr-[4px] py-[4px] mdx:pl-[24px] mdx:pr-[6px] mdx:py-[6px] bg-corporate text-white text-[14px] font-semibold rounded-full shadow hover:bg-red-600 transition duration-300">
                         Обсудить задачу
                         <span className="ml-[10px] hover:pl-4 transition-all duration-200 bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center">
                             <Image
@@ -41,7 +55,7 @@ export default function ContentMarketing() {
                                 alt="arrow rightb black"
                                 width={20} // Укажите нужный размер
                                 height={20}
-                                className="rounded-lg "
+                                className="rounded-lg transition-transform duration-300 transform group-hover:translate-x-[10px]"
                             />
                         </span>
                     </button>
@@ -57,6 +71,7 @@ export default function ContentMarketing() {
                     />
                 </div>
             </div>
+            {isModalOpen && <Application closeModal={closeModal} />}
         </div>
     );
 }

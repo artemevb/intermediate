@@ -33,7 +33,7 @@ export default function Footer({ locale }: LocaleProps) {
   const t = useTranslations('Footer');
 
   return (
-    <div className="bg-darkOverlay w-full pt-[30px] border_radius_footer xl:pt-[120px] щм">
+    <div className="bg-darkOverlay w-full pt-[30px] border_radius_footer xl:pt-[120px]">
       <div className="w-full max-w-[1440px] flex flex-col gap-[15px] mx-auto">
         <div className="w-full flex justify-between flex-col gap-[15px] px-[25px]">
           <div className="flex justify-between flex-row gap-5 items-center xl:hidden">
