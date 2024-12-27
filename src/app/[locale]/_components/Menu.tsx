@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, ChangeEvent, useTransition } from "react";
+import { useEffect, useRef, ChangeEvent, useTransition, useState } from "react";
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import Image from "next/image";
@@ -11,6 +11,7 @@ import arrow_black from "@/public/svg/arrows/arrow_black_lonk.svg";
 import logo1 from "@/public/image/Intermediate.png";
 import { NavItem } from "./Header/NavItem";
 import { useTranslations } from 'next-intl';
+import Application from "../_components/Modals/Application";
 // import axios from 'axios';
 
 interface MenuProps {
@@ -26,8 +27,16 @@ const Menu: React.FC<MenuProps> = ({ menu, closeMenu, navOptions, locale }) => {
   const router = useRouter();
   const pathname = usePathname();
   const localActive = useLocale();
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
@@ -152,7 +161,9 @@ const Menu: React.FC<MenuProps> = ({ menu, closeMenu, navOptions, locale }) => {
 
         <div className="flex flex-row border-t pt-[35px] mdx:gap-[12px]">
 
-          <button className="border rounded-full border-[#303030] flex flex-row items-center pr-[4px] max-w-[193px]">
+          <button
+            onClick={openModal}
+            className="border rounded-full border-[#303030] flex flex-row items-center pr-[4px] max-w-[193px]">
             <p className="text-[#303030] pl-[10px] py-[16px] pr-[10px] text-[14px] font-semibold whitespace-nowrap">{t('discussProject')}</p>
             <div className=" rounded-full bg-[#000000] w-[37px] h-[37px] flex items-center justify-center">
               <Image
@@ -165,7 +176,8 @@ const Menu: React.FC<MenuProps> = ({ menu, closeMenu, navOptions, locale }) => {
             </div>
           </button>
 
-          <button className="border rounded-full border-[#303030] flex flex-row items-center pr-[4px] max-w-[146px]">
+          <a
+            href="tel:+998785558787" className="border rounded-full border-[#303030] flex flex-row items-center pr-[4px] max-w-[146px]">
             <p className="text-[#303030] pl-[10px] py-[16px] pr-[10px] text-[14px] font-semibold whitespace-nowrap">{t('call')}</p>
             <div className=" rounded-full bg-[#000000] w-[37px] h-[37px] flex items-center justify-center">
               <Image
@@ -176,11 +188,12 @@ const Menu: React.FC<MenuProps> = ({ menu, closeMenu, navOptions, locale }) => {
                 quality={100}
               />
             </div>
-          </button>
+          </a>
 
         </div>
 
       </nav >
+      {isModalOpen && <Application closeModal={closeModal} />}
     </div >
   );
 };

@@ -1,18 +1,27 @@
 'use client'
 import Image from "next/image";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import { useTranslations } from "next-intl";
 import arrow_right_black from "@/public/svg/arrows/arrow_right_black.svg";
 import arrow_red from "@/public/svg/arrows/arrow_red_right.svg";
 import arrow_left_red from "@/public/svg/arrows/ArrowsLeftWhite.svg"; // Assume you have a left arrow icon
 import arrow_right_red from "@/public/svg/arrows/ArrowsRightWhite.svg"; // Or any other icon
+import Application from '../Modals/Application'
 
 export default function LearningMarketing() {
     const t = useTranslations("Main.LearningMarketing"); // Using translations
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
     // Reference to the scrollable container
     const scrollRef = useRef<HTMLDivElement>(null);
 
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     // Functions to scroll left / right
     const scrollLeft = () => {
         if (scrollRef.current) {
@@ -73,11 +82,15 @@ export default function LearningMarketing() {
                     "
                 >
                     {/* First Card */}
-                    <div className="bg-corporate rounded-[30px] mdx:rounded-[50px] flex flex-col justify-between gap-4 p-[30px] mdx:px-[40px] mdx:max-w-[705px] min-w-[300px] mdx:min-w-[536px] xl:pt-[100px] xl:min-w-[660px]">
+                    <div
+                        onClick={openModal}
+                        className="bg-corporate rounded-[30px] mdx:rounded-[50px] flex flex-col justify-between gap-4 p-[30px] mdx:px-[40px] mdx:max-w-[705px] min-w-[300px] mdx:min-w-[536px] xl:pt-[100px] xl:min-w-[660px]">
                         <h3 className="text-[25px] mdx:text-[30px] xl:text-[50px] font-bold xl:leading-[65px] mdx:uppercase">
                             {t('analysis_optimization_it_solutions_results')}
                         </h3>
-                        <button className="group inline-flex items-center justify-between pl-[12px] pr-[4px] py-[6px] mdx:pl-[30px] mdx:pr-[6px] mdx:py-[10px] bg-inherit text-white font-semibold rounded-full shadow hover:bg-red-500 transition duration-300 border-white border-[2px] text-[14px] mdx:text-[20px] mdl:text-[24px] max-w-[275px] mdx:max-w-[466px] whitespace-nowrap opacity-[0.9] xl:mt-[70px]">
+                        <button
+
+                            className="group inline-flex items-center justify-between pl-[12px] pr-[4px] py-[6px] mdx:pl-[30px] mdx:pr-[6px] mdx:py-[10px] bg-inherit text-white font-semibold rounded-full shadow hover:bg-red-500 transition duration-300 border-white border-[2px] text-[14px] mdx:text-[20px] mdl:text-[24px] max-w-[275px] mdx:max-w-[466px] whitespace-nowrap opacity-[0.9] xl:mt-[70px]">
                             {t('free_consultation')}
                             <span className="ml-[10px] hover:pl-4 transition-all duration-200 bg-white rounded-full w-[40px] h-[40px] mdx:w-[60px] mdx:h-[60px] flex items-center justify-center">
                                 <Image
@@ -140,6 +153,7 @@ export default function LearningMarketing() {
                     </div>
                 </div>
             </div>
+            {isModalOpen && <Application closeModal={closeModal} />}
         </div>
     );
 }
