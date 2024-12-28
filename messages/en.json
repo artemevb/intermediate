@@ -191,5 +191,22 @@
   "Tools": {
     "button": "Discuss the project",
     "menu": "Menu"
+  },
+  "About": {
+    "TextTitle": {
+      "all_about_us": "all of this is about us.",
+      "main_title": "InterMediate: Creating Solutions for Your Business",
+      "agency_title": "We are the 'InterMediate' Agency",
+      "agency_description": "InterMediate Agency offers modern solutions in the form of IT services to help your business grow, attract customers, and operate more efficiently.\n\nWe combine technology and strategy for your success.",
+      "intermed_innovation_title": "INTERMED INNOVATION",
+      "intermed_innovation_desc": "created a catalog website for Imed, a reliable distributor of medical equipment, to showcase their products and services.",
+      "rmc_de_luxe_title": "Rmc de luxe",
+      "rmc_de_luxe_desc": "We developed rmcdeluxe.com — a premium portal providing professional services for buying, renting, and selling real estate in the UAE.",
+      "more_cases": "More of Our Cases",
+      "arrowAlt": "right arrow",
+      "how_we_work_title": "How We Work",
+      "how_we_work_desc": "We study your business and goals to offer an effective solution.\n\nDevelop strategies, set up processes, and launch projects.\n\nEnsure transparency in our work: reports, statistics, support.\n\nAlways adapt to your needs, adhering to deadlines and budgets.",
+      "client_reviews": "Our Clients' Reviews"
+    }
   }
 }

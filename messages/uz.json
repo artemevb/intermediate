@@ -190,5 +190,22 @@
   "Tools": {
     "button": "Loyihani muhokama qilish",
     "menu": "Menyu"
+  },
+  "About": {
+    "TextTitle": {
+      "all_about_us": "bularning barchasi biz haqimizda.",
+      "main_title": "InterMediate: Biznesingiz uchun yechimlar yaratamiz",
+      "agency_title": "Biz «InterMediate» agentligimiz",
+      "agency_description": "InterMediate agentligi sizning biznesingizni rivojlantirish, mijozlarni jalb qilish va samaraliroq ishlash uchun zamonaviy IT xizmatlarini taklif etadi.\n\nBiz texnologiya va strategiyani muvaffaqiyatingiz uchun birlashtiramiz.",
+      "intermed_innovation_title": "INTERMED INNOVATION",
+      "intermed_innovation_desc": "Imed uchun katalog veb-saytini yaratdik, bu ishonchli tibbiy uskunalar distribyutori bo'lib, ularning mahsulotlari va xizmatlarini namoyish etish uchun.",
+      "rmc_de_luxe_title": "Rmc de luxe",
+      "rmc_de_luxe_desc": "Biz rmcdeluxe.com saytini ishlab chiqdik — BAAda ko'chmas mulk sotib olish, ijaraga olish va sotish bo'yicha professional xizmatlar ko'rsatuvchi premium portal.",
+      "more_cases": "Batafsil ishlarimiz",
+      "arrowAlt": "o‘ngga yo'nalgan o'q",
+      "how_we_work_title": "Biz qanday ishlaymiz",
+      "how_we_work_desc": "Samarali yechim taklif etish uchun sizning biznesingiz va maqsadlaringizni o'rganamiz.\n\nStrategiyalarni ishlab chiqamiz, jarayonlarni sozlaymiz va loyihalarni ishga tushiramiz.\n\nIsh jarayonimizning shaffofligini ta'minlaymiz: hisobotlar, statistikalar, qo'llab-quvvatlash.\n\nHar doim sizning ehtiyojlaringizga moslashamiz, muddatlar va byudjetga rioya qilgan holda.",
+      "client_reviews": "Mijozlarimizning fikrlari"
+    }
   }
 }

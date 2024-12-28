@@ -14,20 +14,20 @@ export default function TextTitle() {
         <div className="relative w-full mx-auto max-w-[960px] flex flex-col pb-[100px] mdx:pb-[120px] max-xl:px-[15px]">
             <p className="flex gap-[20px] items-center w-full text-[16px] mdx:font-medium mdx:text-[18px] xl:text-[20px]">
                 <Image src={ellipse} alt="ellipse" className="w-[16px] h-[16px]  mdx:w-[20px] mdx:h-[20px] xl:w-[25px] xl:h-[25px]" />
-                всё это — про нас.</p>
+                {t('all_about_us')}
+            </p>
             <h1 className="text-[28px] mdx:text-[40px] xl:text-[60px] leading-[1.23] xl:leading-[1.1] font-bold mt-[42px] xl:mt-[70px]">
-                InterMediate: создаем решения для вашего бизнеса
+                {t('main_title')}
             </h1>
             <h2 className="text-[25px] mdx:text-[30px] xl:text-[50px] leading-[1.23] xl:leading-[1.1] font-bold mt-[50px] mdx:mt-[100px] xl:mt-[120px] text-[#000000]">
-                Мы — агентство «InterMediate»
+                {t('agency_title')}
             </h2>
-            <p className="text-[#303030] text-[16px] mdx:text-[20px] xl:text-[24px] mt-[16px] mdx:mt-[30px]">Агенство InterMediate предлагает современные решения в виде IT-услуг, чтобы помочь вашему бизнесу вырасти, привлечь клиентов и работать эффективнее.
-
-                Мы комбинируем технологии и стратегию для вашего успеха.
+            <p className="text-[#303030] text-[16px] mdx:text-[20px] xl:text-[24px] mt-[16px] mdx:mt-[30px]">
+                {t('agency_description')}
             </p>
 
             <div className="flex flex-col mt-[35px] mdx:mt-[70px] gap-[30px] xl:gap-[40px]">
-                <div className="flex flex-row items-startcenter gap-[16px] mdx:gap-[20px] xl:gap-[60px]">
+                <div className="flex flex-row items-start center gap-[16px] mdx:gap-[20px] xl:gap-[60px]">
                     <div>
                         <Image
                             src={ImedLogo}
@@ -37,15 +37,15 @@ export default function TextTitle() {
                     </div>
                     <div>
                         <h5 className="text-[18px] mdx:text-[25px] xl:text-[30px] font-semibold">
-                            INTERMED INNOVATION
+                            {t('intermed_innovation_title')}
                         </h5>
                         <p className="text-[16px] mdx:text-[20px] xl:text-[24px] text-[#303030]">
-                            сделали сайт-каталог для Imed, надежного дистрибьютора медицинского оборудования, чтобы представить их продукцию и услуги.
+                            {t('intermed_innovation_desc')}
                         </p>
                     </div>
                 </div>
 
-                <div className="flex flex-row items-startcenter gap-[16px] mdx:gap-[20px] xl:gap-[60px]">
+                <div className="flex flex-row items-start center gap-[16px] mdx:gap-[20px] xl:gap-[60px]">
                     <div>
                         <Image
                             src={RmcLogo}
@@ -55,10 +55,10 @@ export default function TextTitle() {
                     </div>
                     <div>
                         <h5 className="text-[18px] mdx:text-[25px] xl:text-[30px] font-semibold">
-                            Rmc de luxe
+                            {t('rmc_de_luxe_title')}
                         </h5>
                         <p className="text-[16px] mdx:text-[20px] xl:text-[24px] text-[#303030]">
-                            Мы разработали rmcdeluxe.com — премиальный портал, предоставляющий профессиональные услуги по покупке, аренде и продаже недвижимости в ОАЭ.
+                            {t('rmc_de_luxe_desc')}
                         </p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export default function TextTitle() {
             <div className="mt-6 flex justify-start">
                 <button className="group border rounded-full border-[#fff] flex flex-row items-center bg-corporate pr-[6px] mdx:pr-[12px] py-[4px] mdx:py-[12px] overflow-hidden">
                     <p className="text-[#fff] pl-[24px] pr-[10px] text-[18px] font-semibold">
-                        Больше наших кейсов
+                        {t('more_cases')}
                     </p>
                     <div className="relative rounded-full bg-[#ffff] w-[40px] h-[40px] flex items-center justify-center overflow-hidden">
                         <Image
@@ -82,21 +82,15 @@ export default function TextTitle() {
             </div>
             <div>
                 <h2 className="text-[25px] mdx:text-[30px] xl:text-[50px] leading-[1.23] xl:leading-[1.1] font-bold mt-[55px] mdx:mt-[90px] xl:mt-[100px] text-[#000000]">
-                    Как мы работаем
+                    {t('how_we_work_title')}
                 </h2>
                 <p className="text-[#303030] text-[16px] mdx:text-[20px] xl:text-[24px] mt-[16px] mdx:mt-[30px]">
-                    Изучаем ваш бизнес и цели, чтобы предложить эффективное решение.
-
-                    Разрабатываем стратегию, настраиваем процессы и запускаем проекты.
-
-                    Гарантируем прозрачность работы: отчеты, статистика, поддержка.
-
-                    Всегда адаптируемся под ваши потребности, соблюдая сроки и бюджет.
+                    {t('how_we_work_desc')}
                 </p>
                 <div className="mt-6 flex justify-start">
                     <button className="group border rounded-full border-[#fff] flex flex-row items-center bg-corporate pr-[6px] mdx:pr-[12px] py-[4px] mdx:py-[12px] overflow-hidden">
                         <p className="text-[#fff] pl-[24px] pr-[10px] text-[18px] font-semibold">
-                            Отзывы наших клиентов
+                            {t('client_reviews')}
                         </p>
                         <div className="relative rounded-full bg-[#ffff] w-[40px] h-[40px] flex items-center justify-center overflow-hidden">
                             <Image
