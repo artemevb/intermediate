@@ -18,7 +18,7 @@ import Form from "./Form";
 export default function Main() {
   // export default function Main({ locale }: NewsCompProps) {
   return (
-    <div className=" bg-[#303030] flex flex-col gap-[90px] mdl:gap-[130px] xl:gap-[180px]">
+    <main className=" bg-[#303030] flex flex-col gap-[90px] mdl:gap-[130px] xl:gap-[180px]">
       <div>
         <ContentMarketing />
         <Card />
@@ -31,6 +31,6 @@ export default function Main() {
       <Subscribe />
       <Map />
       <Form />
-    </div>
+    </main>
   );
 }

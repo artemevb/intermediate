@@ -9,11 +9,16 @@ import { getMessages } from 'next-intl/server';
 import Script from 'next/script';
 import BodyWrapper from './_components/BodyWrapper';
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['300', '400', '700', '900'], fallback: ['sans-serif'] });
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '700', '900'],
+  fallback: ['sans-serif'],
+});
 
 export const metadata: Metadata = {
   title: 'InterMediate – IT-решения для вашего бизнеса',
-  description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
+  description:
+    'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
   keywords:
     'IT-услуги, веб-разработка, автоматизация бизнес-процессов, цифровые решения, маркетинг, рост бизнеса, InterMediate, IT агентство',
   authors: [{ name: 'InterMediate', url: 'https://in-te.uz' }],
@@ -23,7 +28,8 @@ export const metadata: Metadata = {
     locale: 'ru_RU',
     url: 'https://in-te.uz',
     title: 'InterMediate – IT-решения для вашего бизнеса',
-    description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
+    description:
+      'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
     siteName: 'InterMediate',
     images: [
       {
@@ -37,14 +43,15 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'InterMediate – IT-решения для вашего бизнеса',
-    description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы.',
+    description:
+      'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы.',
     images: 'https://in-te.uz/og-image.jpg',
   },
   icons: {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://in-te.uz.uz',
+    canonical: 'https://in-te.uz',
     languages: {
       ru: '/ru',
       en: '/en',
@@ -62,7 +69,8 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale?: string };
 }>) {
-  const locale: Locales = params?.locale === 'uz' ? 'uz' : params?.locale === 'en' ? 'en' : 'ru';
+  const locale: Locales =
+    params?.locale === 'uz' ? 'uz' : params?.locale === 'en' ? 'en' : 'ru';
 
   unstable_setRequestLocale(locale);
 
@@ -74,7 +82,7 @@ export default async function RootLayout({
     "@type": "Organization",
     "name": "InterMediate",
     "url": 'https://in-te.uz',
-    "description": 
+    "description":
       "InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Мы комбинируем технологии и стратегию для вашего успеха.",
     "address": {
       "@type": "PostalAddress",
@@ -96,10 +104,64 @@ export default async function RootLayout({
           <Header locale={locale} />
           {children}
           <Footer locale={locale} />
+
+          {/* Структурированные данные */}
           <Script
             id="structured-data"
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          />
+
+          {/* Яндекс.Метрика */}
+          <Script
+            id="yandex-metrika"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                ym(99344369, "init", {
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+                });
+              `,
+            }}
+          />
+          {/* Noscript для Яндекс.Метрики */}
+          <noscript>
+            <div>
+              <img
+                src="https://mc.yandex.ru/watch/99344369"
+                style={{ position: 'absolute', left: '-9999px' }}
+                alt=""
+              />
+            </div>
+          </noscript>
+
+          {/* Google Tag (gtag.js) */}
+          <Script
+            id="google-gtag"
+            src="https://www.googletagmanager.com/gtag/js?id=G-RRTZLJ5XFL"
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-gtag-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-RRTZLJ5XFL');
+              `,
+            }}
           />
         </NextIntlClientProvider>
       </BodyWrapper>
