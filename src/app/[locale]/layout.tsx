@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'InterMediate',
     images: [
       {
-        url: 'https://intermediate.uz/og-image.png',
+        url: 'https://intermediate.uz/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'InterMediate',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'InterMediate – IT-решения для вашего бизнеса',
     description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы.',
-    images: 'https://intermediate.uz/og-image.png',
+    images: 'https://intermediate.uz/og-image.jpg',
   },
   icons: {
     icon: '/favicon.ico',
