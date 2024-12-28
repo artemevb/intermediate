@@ -16,18 +16,18 @@ export const metadata: Metadata = {
   description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
   keywords:
     'IT-услуги, веб-разработка, автоматизация бизнес-процессов, цифровые решения, маркетинг, рост бизнеса, InterMediate, IT агентство',
-  authors: [{ name: 'InterMediate', url: 'https://intermediate.uz' }],
+  authors: [{ name: 'InterMediate', url: 'https://in-te.uz' }],
   viewport: 'width=device-width, initial-scale=1',
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://intermediate.uz',
+    url: 'https://in-te.uz',
     title: 'InterMediate – IT-решения для вашего бизнеса',
     description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Комбинируем технологии и стратегию для вашего успеха.',
     siteName: 'InterMediate',
     images: [
       {
-        url: 'https://intermediate.uz/og-image.jpg',
+        url: 'https://in-te.uz/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'InterMediate',
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'InterMediate – IT-решения для вашего бизнеса',
     description: 'Агентство InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы.',
-    images: 'https://intermediate.uz/og-image.jpg',
+    images: 'https://in-te.uz/og-image.jpg',
   },
   icons: {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://intermediate.uz',
+    canonical: 'https://in-te.uz.uz',
     languages: {
       ru: '/ru',
       en: '/en',
@@ -73,7 +73,7 @@ export default async function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "InterMediate",
-    "url": 'https://intermediate.uz',
+    "url": 'https://in-te.uz',
     "description": 
       "InterMediate предлагает современные IT-услуги для роста вашего бизнеса, привлечения клиентов и повышения эффективности работы. Мы комбинируем технологии и стратегию для вашего успеха.",
     "address": {
@@ -85,7 +85,7 @@ export default async function RootLayout({
     },
     "telephone": "+998509004738",
     "openingHours": "Mo-Fr 10:00-19:00",
-    "image": "https://intermediate.uz/og-image.jpg",
+    "image": "https://in-te.uz/og-image.jpg",
     "priceRange": "USD"
   };
 
