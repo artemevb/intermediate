@@ -9,7 +9,7 @@ export default function Result() {
     const t = useTranslations("Main.Result");
 
     return (
-        <div className="relative w-full mx-auto max-w-[1720px] flex justify-center items-center pb-[100px] mdx:pb-[120px] max-4xl:px-[15px]">
+        <div className="relative w-full mx-auto max-w-[1720px] flex justify-center items-center max-4xl:px-[15px]">
             {/* Основной блок формы */}
             <div className="relative bg-form p-[30px] mdx:p-[40px] 2xl:py-[120px] 2xl:px-[160px] rounded-[30px] mdx:rounded-[50px] xl:rounded-[80px] shadow-lg w-full z-10 2xl:flex 2xl:flex-col overflow-hidden">
                 {/* Градиенты */}

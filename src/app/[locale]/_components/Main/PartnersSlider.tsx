@@ -169,7 +169,7 @@ export default function PartnersSlider() {
                 {/* Кнопка: Медленнее (стрелка влево) */}
                 <button
                     onClick={handleSlower}
-                    className="rounded-full w-[20px] h-[20px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px] flex items-center justify-center hover:opacity-70 transition"
+                    className="rounded-full w-[25px] h-[25px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px] flex items-center justify-center hover:opacity-70 transition"
                 >
                     <Image src={arrowLeft} alt="Slower" width={100} height={100} quality={100} />
                 </button>
@@ -177,7 +177,7 @@ export default function PartnersSlider() {
                 {/* Кнопка Паузы/Пуска */}
                 <button
                     onClick={handlePauseToggle}
-                    className="rounded-full w-[20px] h-[20px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px] flex items-center justify-center hover:opacity-70 transition"
+                    className="rounded-full w-[25px] h-[25px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px] flex items-center justify-center hover:opacity-70 transition"
                 >
                     {/* Если isPaused === true, показываем иконку Play, иначе — Pause */}
                     <Image
@@ -192,7 +192,7 @@ export default function PartnersSlider() {
                 {/* Кнопка: Быстрее (стрелка вправо) */}
                 <button
                     onClick={handleFaster}
-                    className="rounded-full w-8 h-8 flex items-center justify-center hover:opacity-70 transition w-[20px] h-[20px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px]"
+                    className="rounded-full flex items-center justify-center hover:opacity-70 transition w-[25px] h-[25px] mdx:w-[32px] mdx:h-[32px] xl:w-[48px] xl:h-[48px]"
                 >
                     <Image src={arrowRight} alt="Faster" width={100} height={100} quality={100} />
                 </button>

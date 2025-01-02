@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from "next/image";
 import web from "@/public/svg/tools/web.svg";
 import robots from "@/public/svg/tools/robots.svg";
@@ -11,12 +12,16 @@ import { useTranslations } from "next-intl";
 import red_rounded1 from "@/public/svg/gradient/last1.svg";
 import red_rounded2 from "@/public/svg/gradient/last2.svg";
 
-export default function Services() {
+interface ServicesProps {
+    id?: string;
+}
+
+
+const Services: React.FC<ServicesProps> = ({ id }) => {
     const t = useTranslations("Main.Services");
 
     return (
-        <div className="relative overflow-hidden w-full">
-            {/* Gradient Background Images */}
+        <div id={id} className="relative overflow-hidden w-full">
             <div className="absolute bottom-[-70px] left-[-150px] xl:bottom-[-100px] xl:left-[-200px] z-0 pointer-events-none">
                 <Image
                     src={red_rounded1}
@@ -37,11 +42,14 @@ export default function Services() {
             </div>
             {/* Services Grid */}
             <div className="max-w-[1440px] flex flex-col mx-auto max-3xl:px-[15px] w-full">
+                <h2 className="text-white text-[28px] mdx:text-[40px] xl:text-[60px] font-bold mb-[20px] xl:mb-[40px]">
+                    {t('title')}
+                </h2>
                 <div className="grid grid-cols-1 mdl:grid-cols-2 gap-[16px] mdx:gap-[20px]">
                     {/* Карточка 1 */}
                     <button
                         type="button"
-                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200"
+                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200 cursor-default"
                     >
                         <div className="flex items-center justify-between">
                             {/* Service Icon */}
@@ -78,7 +86,7 @@ export default function Services() {
                     {/* Карточка 2 */}
                     <button
                         type="button"
-                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200"
+                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200 cursor-default"
                     >
                         <div className="flex items-center justify-between">
                             {/* Service Icon */}
@@ -115,7 +123,7 @@ export default function Services() {
                     {/* Карточка 3 */}
                     <button
                         type="button"
-                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200"
+                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200 cursor-default"
                     >
                         <div className="flex items-center justify-between">
                             {/* Service Icon */}
@@ -152,7 +160,7 @@ export default function Services() {
                     {/* Карточка 4 */}
                     <button
                         type="button"
-                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200"
+                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200 cursor-default"
                     >
                         <div className="flex items-center justify-between">
                             {/* Service Icon */}
@@ -189,7 +197,7 @@ export default function Services() {
                     {/* Карточка 5 */}
                     <button
                         type="button"
-                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200"
+                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200 cursor-default"
                     >
                         <div className="flex items-center justify-between">
                             {/* Service Icon */}
@@ -226,7 +234,7 @@ export default function Services() {
                     {/* Карточка 6 */}
                     <button
                         type="button"
-                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200"
+                        className="group bg-white p-[20px] mdx:pb-[40px] 2xl:px-[40px] 2xl:pb-[80px] rounded-[20px] shadow-lg relative w-full text-left focus:outline-none hover:bg-red-100 transition-all duration-200 cursor-default"
                     >
                         <div className="flex items-center justify-between">
                             {/* Service Icon */}
@@ -264,3 +272,4 @@ export default function Services() {
         </div>
     );
 }
+export default Services;

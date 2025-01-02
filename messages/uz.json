@@ -42,6 +42,7 @@
       ]
     },
     "Services": {
+      "title": "Bizning Xizmatlarimiz",
       "service1": {
         "title": "Veb-saytlar yaratish",
         "description": "Sotadigan veb-saytlar yaratamiz. Zamonaviy, foydalanuvchi uchun qulay va mijozlaringiz uchun optimallashtirilgan."
@@ -161,6 +162,10 @@
       "arrow_right_red_alt": "Qizil o'ng o'q",
       "arrow_right_black_alt": "Qora o'ng o'q",
       "arrow_red_alt": "Qizil o'q"
+    },
+    "Blog": {
+      "title": "Blog",
+      "all_news": "Barcha yangiliklar"
     }
   },
   "Modal": {

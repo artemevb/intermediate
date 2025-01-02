@@ -1,14 +1,19 @@
+import React from 'react';
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import label from "@/public/svg/contacts/label.svg";
 import tel from "@/public/svg/contacts/tel.svg";
 import telegram from "@/public/svg/contacts/telegram.svg";
 
-export default function Map() {
+interface MapProps {
+    id?: string; 
+  }
+  
+  const Map: React.FC<MapProps> = ({ id }) => {
     const t = useTranslations("Main.Map");
 
     return (
-        <div className="w-full mx-auto max-w-[1720px] max-4xl:px-[15px] ">
+        <div id={id} className="w-full mx-auto max-w-[1720px] max-4xl:px-[15px] ">
             <div className="relative w-full flex flex-col items-center bg-white shadow-lg rounded-[30px] mdx:rounded-[50px] xl:rounded-[80px]">
                 {/* Заголовок */}
                 <div className="w-full px-[30px] mdx:px-[40px] 4xl:px-[140px]">
@@ -81,3 +86,4 @@ export default function Map() {
         </div>
     );
 }
+export default Map;

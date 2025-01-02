@@ -19,7 +19,7 @@ interface CardProps {
 // Компонент Card с аннотациями типов
 const Card: React.FC<CardProps> = ({ icon, title, description, iconWidth = 100, iconHeight = 100 }) => {
     return (
-        <button className="relative flex-shrink-0 bg-corporate rounded-[32px] flex flex-row gap-4 items-center justify-between p-4 min-w-[340px] max-w-[350px] mdx:max-w-[420px] xl:max-w-[460px] hover:bg-hover_corporate transition-all duration-200">
+        <button className="relative flex-shrink-0 bg-corporate rounded-[32px] flex flex-row gap-4 items-center justify-between p-4 min-w-[340px] max-w-[350px] mdx:max-w-[420px] xl:max-w-[460px] hover:bg-hover_corporate transition-all duration-200 cursor-default">
             <div className={`flex-shrink-0 flex items-center ${icon === pin ? 'w-[40px] mdx:w-[60px] 2xl:w-[80px] 2xl:h-[80px]' : 'w-[40px] mdx:w-[60px] 2xl:w-[100px]'}`}>
                 <Image
                     src={icon}

@@ -115,7 +115,7 @@ export default function Footer({ locale }: LocaleProps) {
               </div>
               <div className="flex gap-3 mdx:gap-[20px]">
                 <a
-                  href="https://www.instagram.com/rmc_de_luxe?igsh=cWpxdXVobHgxODcx"
+                  href="https://www.instagram.com/intermediate.agency"
                   target="_blank"
                   rel="noopener noreferrer"
                 // onClick={(e) => handleSocialClick(e, "https://www.instagram.com/rmc_de_luxe?igsh=cWpxdXVobHgxODcx", "INSTAGRAM_FOOTER")}
@@ -130,7 +130,7 @@ export default function Footer({ locale }: LocaleProps) {
                   />
                 </a>
                 <a
-                  href="https://t.me/rmc_de_luxe"
+                  href="https://t.me/InterMediate_Agency"
                   target="_blank"
                   rel="noopener noreferrer"
                 // onClick={(e) => handleSocialClick(e, "https://t.me/rmc_de_luxe", "TELEGRAM_FOOTER")}
@@ -144,7 +144,7 @@ export default function Footer({ locale }: LocaleProps) {
                     className="w-[48px] h-[48px]"
                   />
                 </a>
-                <a href="https://www.youtube.com/@RMC_DE_LUXE" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.youtube.com/@user-up6dg9hx5v" target="_blank" rel="noopener noreferrer"
                 // onClick={(e) => handleSocialClick(e, "https://www.youtube.com/@RMC_DE_LUXE", "YOUTUBE")}
                 >
                   <Image
@@ -166,7 +166,7 @@ export default function Footer({ locale }: LocaleProps) {
 
               <div className="flex-1 flex items-center justify-center border-r border-[#5A5A5A]">
                 <div className="flex flex-col text-left text-[16px] mdx:text-[18px] xl:text-[20px] gap-[20px] mdx:gap-[10px] text-[#FFFFFF] font-medium xl:max-w-[110px] xl:gap-[30px]">
-                  <Link href={`/${locale}/services`} className="hover:text-[#B3B3B3]">{t('services')}</Link>
+                  {/* <Link href={`/${locale}/services`} className="hover:text-[#B3B3B3]">{t('services')}</Link> */}
                   <Link href={`/${locale}/about`} className="hover:text-[#B3B3B3]">{t('aboutUs')}</Link>
                   <Link href={`/${locale}/cases`} className="hover:text-[#B3B3B3]">{t('cases')}</Link>
                 </div>
@@ -174,8 +174,8 @@ export default function Footer({ locale }: LocaleProps) {
               <div className="flex-1 flex items-center justify-center">
                 <div className="flex flex-col text-left text-[16px] mdx:text-[18px] xl:text-[20px] gap-[20px] mdx:gap-[10px] text-[#FFFFFF] font-medium xl:max-w-[163px] xl:gap-[30px]">
                   <Link href={`/${locale}/blog`} className="hover:text-[#B3B3B3]">{t('blog')}</Link>
-                  <Link href={`/${locale}/contacts`} className="hover:text-[#B3B3B3]">{t('contacts')}</Link>
-                  <Link href={`/${locale}/marketing`} className="hover:text-[#B3B3B3]">{t('marketing')}</Link>
+                  <Link href={`/#contacts`} className="hover:text-[#B3B3B3]">{t('contacts')}</Link>
+                  {/* <Link href={`/${locale}/marketing`} className="hover:text-[#B3B3B3]">{t('marketing')}</Link> */}
                 </div>
               </div>
             </div>

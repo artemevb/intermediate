@@ -42,6 +42,7 @@
       ]
     },
     "Services": {
+      "title": "Our Services",
       "service1": {
         "title": "Website Development",
         "description": "We create websites that sell. Modern, user-friendly, and optimized for your customers."
@@ -162,6 +163,10 @@
       "arrow_right_red_alt": "Red right arrow",
       "arrow_right_black_alt": "Black right arrow",
       "arrow_red_alt": "Red arrow"
+    },
+    "Blog": {
+      "title": "Blog",
+      "all_news": "All News"
     }
   },
   "Modal": {

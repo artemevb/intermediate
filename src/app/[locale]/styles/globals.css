@@ -37,4 +37,22 @@ html {
     scrollbar-width: none;
   }
 
-
+/* Стили для главного вертикального скроллбара */
+  html {
+    scrollbar-width: thin; /* Для Firefox */
+    scrollbar-color: #ff0000 #000; /* Цвет для Firefox */
+  }
+  
+  html::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #000; /* Цвет фона трека */
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #ff0000; /* Цвет ползунка */
+    border: 3px solid #000; /* Внутренний отступ */
+  }
+  

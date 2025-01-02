@@ -171,7 +171,7 @@ const QuestionSent: React.FC<QuestionSentProps> = ({ closeModal }) => {
         onClick={handleBackdropClick}
       >
         <div className="bg-white p-6 mdx:p-[30px] shadow-md w-[90%] rounded-[30px] max-w-[466px] relative flex flex-col items-center justify-center">
-          <div className="flex justify-between items-start w-full">
+          <div className="flex justify-between items-start w-full text-[#010101]">
             <h2 className=" lh text-[18px] font-semibold mdx:text-[25px] xl:text-[30px]">
               {formatText(t("type-of-service"))}
             </h2>
@@ -203,16 +203,15 @@ const QuestionSent: React.FC<QuestionSentProps> = ({ closeModal }) => {
                   onChange={handleInputChange}
                   onFocus={() => setFocusedInput(field)}
                   onBlur={() => setFocusedInput(null)}
-                  className={`block w-full px-3 py-[22px] text-[#666666] placeholder-transparent focus:outline-none border border-[#F0F0F0] rounded-[20px] ${
-                    focusedInput === field
-                      ? validateInput(
-                          field as keyof FormValues,
-                          values[field as keyof FormValues] as string
-                        ).isValid
-                        ? "border-[#EEEEEE] text-black"
-                        : "border-red-500 text-black"
-                      : "border-[#EEEEEE] text-black"
-                  }`}
+                  className={`block w-full px-3 py-[22px] text-[#666666] placeholder-transparent focus:outline-none border border-[#F0F0F0] rounded-[20px] ${focusedInput === field
+                    ? validateInput(
+                      field as keyof FormValues,
+                      values[field as keyof FormValues] as string
+                    ).isValid
+                      ? "border-[#EEEEEE] text-black"
+                      : "border-red-500 text-black"
+                    : "border-[#EEEEEE] text-black"
+                    }`}
                   placeholder={
                     field === "name"
                       ? t("full-name")
@@ -222,40 +221,38 @@ const QuestionSent: React.FC<QuestionSentProps> = ({ closeModal }) => {
                 />
                 <label
                   htmlFor={field}
-                  className={`absolute transition-all text-[16px] mdx:text-[19px] ${
-                    focusedInput === field ||
+                  className={`absolute transition-all text-[16px] mdx:text-[19px] ${focusedInput === field ||
                     (values[field as keyof FormValues] &&
                       (values[field as keyof FormValues] as string).length > 0)
-                      ? "-top-4 text-xs"
-                      : "top-[22px] left-[24px] text-[16px] mdx:text-[20px]"
-                  } ${
-                    focusedInput === field
+                    ? "-top-4 text-xs"
+                    : "top-[22px] left-[24px] text-[16px] mdx:text-[20px]"
+                    } ${focusedInput === field
                       ? "text-[#666666] opacity-[0.8]"
                       : "text-[#666666] opacity-[0.8]"
-                  } cursor-text`}
+                    } cursor-text`}
                   onClick={() => {
                     const input = document.getElementsByName(field)[0] as HTMLElement;
                     input.focus();
                   }}
                 >
                   {focusedInput === field &&
-                  (values[field as keyof FormValues] as string).length > 0
+                    (values[field as keyof FormValues] as string).length > 0
                     ? validateInput(
-                        field as keyof FormValues,
-                        values[field as keyof FormValues] as string
-                      ).message
+                      field as keyof FormValues,
+                      values[field as keyof FormValues] as string
+                    ).message
                     : field === "name"
-                    ? t("full-name")
-                    : t("telephone-number")}
+                      ? t("full-name")
+                      : t("telephone-number")}
                 </label>
                 {/* Опционально: отображение сообщения об ошибке валидации */}
                 {(focusedInput === field ||
                   (values[field as keyof FormValues] &&
                     (values[field as keyof FormValues] as string).length > 0)) &&
-                !validateInput(
-                  field as keyof FormValues,
-                  values[field as keyof FormValues] as string
-                ).isValid ? (
+                  !validateInput(
+                    field as keyof FormValues,
+                    values[field as keyof FormValues] as string
+                  ).isValid ? (
                   <span className="text-red-500 text-sm">
                     {
                       validateInput(
@@ -267,43 +264,6 @@ const QuestionSent: React.FC<QuestionSentProps> = ({ closeModal }) => {
                 ) : null}
               </div>
             ))}
-
-            {/* Необязательное поле comment */}
-            <div className="relative" key="comment">
-              <input
-                name="comment"
-                value={values.comment ?? ""}
-                onChange={handleInputChange}
-                onFocus={() => setFocusedInput("comment")}
-                onBlur={() => setFocusedInput(null)}
-                className={`block w-full px-3 py-[22px] text-[#666666] placeholder-transparent focus:outline-none border border-[#F0F0F0] rounded-[20px] ${
-                  focusedInput === "comment"
-                    ? "border-[#EEEEEE] text-black"
-                    : "border-[#EEEEEE] text-black"
-                }`}
-                placeholder={t("comment-placeholder")}
-              />
-              <label
-                htmlFor="comment"
-                className={`absolute transition-all text-[16px] mdx:text-[19px] ${
-                  focusedInput === "comment" || (values.comment && values.comment.length > 0)
-                    ? "-top-4 text-xs"
-                    : "top-[22px] left-[24px] text-[16px] mdx:text-[20px]"
-                } ${
-                  focusedInput === "comment"
-                    ? "text-[#666666] opacity-[0.8]"
-                    : "text-[#666666] opacity-[0.8]"
-                } cursor-text`}
-                onClick={() => {
-                  const textarea = document.getElementsByName("comment")[0] as HTMLElement;
-                  textarea.focus();
-                }}
-              >
-                {focusedInput === "comment" && values.comment
-                  ? values.comment
-                  : t("comment")}
-              </label>
-            </div>
 
             {/* Необязательный выпадающий список для выбора услуги */}
             <div className="relative border rounded-[20px] border-[#F0F0F0] border-opacity-[0.8] mt-3">
@@ -322,11 +282,11 @@ const QuestionSent: React.FC<QuestionSentProps> = ({ closeModal }) => {
               </button>
 
               {isDropdownOpen && (
-                <ul className="absolute bg-white border border-gray-300 w-full mt-1 z-10 max-h-60 overflow-y-auto">
+                <ul className="absolute bg-white border border-gray-300 w-full mt-1 z-10 max-h-[190px] overflow-y-auto">
                   {services.map((service, index) => (
                     <li
                       key={index}
-                      className="p-3 hover:bg-gray-200 cursor-pointer"
+                      className="p-3 text-[#A6A6A6] hover:bg-gray-200 cursor-pointer"
                       onClick={() => handleSelectService(service)}
                     >
                       {service}
@@ -335,6 +295,42 @@ const QuestionSent: React.FC<QuestionSentProps> = ({ closeModal }) => {
                 </ul>
               )}
             </div>
+
+            {/* Необязательное поле comment */}
+            <div className="relative" key="comment">
+              <input
+                name="comment"
+                value={values.comment ?? ""}
+                onChange={handleInputChange}
+                onFocus={() => setFocusedInput("comment")}
+                onBlur={() => setFocusedInput(null)}
+                className={`block w-full px-3 py-[22px] text-[#666666] placeholder-transparent focus:outline-none border border-[#F0F0F0] rounded-[20px] ${focusedInput === "comment"
+                  ? "border-[#EEEEEE] text-black"
+                  : "border-[#EEEEEE] text-black"
+                  }`}
+                placeholder={t("comment-placeholder")}
+              />
+              <label
+                htmlFor="comment"
+                className={`absolute transition-all text-[16px] mdx:text-[19px] ${focusedInput === "comment" || (values.comment && values.comment.length > 0)
+                  ? "-top-4 text-xs"
+                  : "top-[22px] left-[24px] text-[16px] mdx:text-[20px]"
+                  } ${focusedInput === "comment"
+                    ? "text-[#666666] opacity-[0.8]"
+                    : "text-[#666666] opacity-[0.8]"
+                  } cursor-text`}
+                onClick={() => {
+                  const textarea = document.getElementsByName("comment")[0] as HTMLElement;
+                  textarea.focus();
+                }}
+              >
+                {focusedInput === "comment" && values.comment
+                  ? values.comment
+                  : t("comment")}
+              </label>
+            </div>
+
+
 
             <div className="flex justify-start w-full">
               <button className="group border rounded-full border-[#fff] flex flex-row items-center justify-between bg-corporate pr-[6px] mdx:pr-[12px] py-[4px] mdx:py-[12px] overflow-hidden w-full">

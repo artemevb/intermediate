@@ -6,30 +6,30 @@ import LearningMarketing from "./LearningMarketing";
 import ReviewsClients from "./ReviewsClients";
 import PartnersSlider from "./PartnersSlider";
 import Result from "./Result";
+import Blog from "./Blog";
 import Subscribe from "./Subscribe";
 import Map from "./Map";
 import Form from "./Form";
 
-// type Locale = 'ru' | 'uz' | 'en';
+interface NewsCompProps {
+  locale: string;
+}
 
-// interface NewsCompProps {
-//   locale: string;
-// }
-export default function Main() {
-  // export default function Main({ locale }: NewsCompProps) {
+  export default function Main({ locale }: NewsCompProps) {
   return (
     <main className=" bg-[#303030] flex flex-col gap-[90px] mdl:gap-[130px] xl:gap-[180px]">
       <div>
         <ContentMarketing />
         <Card />
       </div>
-      <Services />
+      <Services id="services" />
       <LearningMarketing />
       <ReviewsClients />
       <PartnersSlider />
       <Result />
       <Subscribe />
-      <Map />
+      <Blog locale={locale}/>
+      <Map id="contacts" />
       <Form />
     </main>
   );
